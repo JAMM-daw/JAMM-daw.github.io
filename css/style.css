@@ -1,0 +1,278 @@
+
+
+li a, p {
+  font-family: 'Georgia';
+}
+
+
+/* HEADER MENU */
+
+/* HEADER DESKTOP*/
+
+.desktop.menu.top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 180px;
+  margin: 0;
+  top: 0;
+}
+
+.desktop.menu.top .row {
+  margin: 0;
+}
+
+.desktop.menu.top .col-4, .desktop.menu.top .col-8 {
+  padding: 0;
+}
+
+/*LOGO*/
+
+.contenedor-logo {
+  max-width: 130px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.contenedor-logo img {
+  max-width: 100%;
+}
+
+
+/*ENLACES*/
+
+.desktop.menu ul {
+  list-style: none;
+  margin-top: 35px;
+}
+
+.desktop.menu li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.desktop.menu li a {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* STICKY HEADER */
+
+.desktop.menu.sticky {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 180px;
+  margin: 0;
+  top: 0;
+}
+
+/*ELEMENTOS DEL FONDO*/
+
+
+.solapa.superior.blanco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 130px;
+  background-image: url('../images/solapa-superior-1.png');
+  z-index: 100;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solapa.inferior.blanco {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 110px;
+  background-image: url('../images/solapa-inferior-1.png');
+  z-index: 100;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solapa.superior.azul {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 120px;
+  background-image: url('../images/solapa-superior-2.png');
+  z-index: 100;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solapa.inferior.azul {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 110px;
+  background-image: url('../images/solapa-inferior-2.png');
+  z-index: 100;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solapa.superior.textura {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 80px;
+  background-image: url('../images/corte-azul.png');
+  z-index: 100;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+.kendo.intro, .kendo.saber-mas, .iaido.intro, .iaido.saber-mas, .mapa.intro, .listado {
+  background-image: url('../images/madera-cortado.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.kendo.video, .iaido.video, .juego, .slider, .mapa.frame{
+  position: relative;
+}
+
+.caja-video {
+  position: relative;
+  width: 100%;
+}
+
+.caja-video img{
+  width: 100%;
+  height:auto;
+}
+
+.caja-texto {
+  padding: 125px 0;
+  color: white;
+}
+
+.juego, .formulario, .copyright {
+  background-image: url('../images/textura-azul.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.juego.intro p {
+  color: white;
+}
+
+.oculto {
+  display: none;
+}
+
+button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+/*FOOTER*/
+footer .logo-footer {
+  max-width: 100px;
+  margin: auto;
+}
+
+footer .caja-icono {
+  max-width: 40px;
+  margin: auto;
+}
+
+footer img {
+  max-width: 100%;
+}
+
+.iconos-redes {
+  max-width: 200px;
+  margin: auto;
+}
+
+footer .copyright {
+  color: white;
+  text-align: center;
+}
+/*SLIDER*/
+
+#slider {
+  position: relative;
+  top:0;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  z-index: -1;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 800px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
