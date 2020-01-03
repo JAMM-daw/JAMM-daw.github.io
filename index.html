@@ -22,18 +22,23 @@
     <!-- Flexbox-->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css"> -->
     <!-- jQuery-->
- <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
     <!--jQuery UI-->
 
     <!---->
     <script src="./js/desplegar.js"></script>
     <script src="./js/sticky-header.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/responsiveslides.min.js"></script>
     <!---->
     <!---->
     <!-- CSS & Responsive-->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
+
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
@@ -47,7 +52,7 @@
         <div class="row">
             <div class="col-4">
                 <div class="contenedor-logo">
-                    <a href="#"><img src="./images/kikentai-logo.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
                 </div>
             </div>
             <div class="col-8">
@@ -97,29 +102,22 @@
 		</header> -->
 
     <div class="contenedor-principal">
+
         
         <!-- Slider de imágenes -->
 
         <section class="slider">
-            <div id="slider">
-                <a href="#" class="control_next"></a>
-                <a href="#" class="control_prev"></a>
-                <ul>
-                    <li><img src="./images/practicar-kendo.jpg"></li>
-                    <li style="background: #aaa;"><img src="./images/practicar-kendo.jpg"></li>
-                    <li><img src="./images/practicar-kendo.jpg"></li>
-                    <li style="background: #aaa;"><img src="./images/practicar-kendo.jpg"></li>
-                </ul>
-            </div>
+	        <div class="capa-slider"></div>
+		        <ul class="rslides">
+		                    <li><img src="./images/slides/imagen-0.jpg"></li>
+		                    <li><img src="./images/slides/imagen-1.jpg"></li>
+		                    <li><img src="./images/slides/imagen-2.jpg"></li>
+		                    <li><img src="./images/slides/imagen-3.jpg"></li>
+				</ul>
 
-            <!-- 		<div class="slider_option">
-				  <input type="checkbox" id="checkbox">
-				  <label for="checkbox">Autoplay Slider</label>
-				</div>  -->
-
-            <div class="solapa inferior blanco"></div>
-
-        </section>
+			<div class="solapa inferior blanco"></div>
+			
+		</section>
 
         <!-- Información sobre el Kendo visible -->
 

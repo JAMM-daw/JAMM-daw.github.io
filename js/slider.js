@@ -1,47 +1,41 @@
 jQuery(document).ready(function ($) {
-    alert();
 
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
+    $(".rslides").responsiveSlides({
+        speed: 1000, // Integer: Speed of the transition, in milliseconds
+        timeout: 6000, // Integer: Time between slide transitions, in milliseconds
+    });
+
+    // setInterval(function () {
+    //     moveRight();
+    // }, 3000);
   
-	var slideCount = $('#slider ul li').length;
-	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
-	var sliderUlWidth = slideCount * slideWidth;
-	
-	$('#slider').css({ width: slideWidth, height: slideHeight });
-	
-	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
-    $('#slider ul li:last-child').prependTo('#slider ul');
+    // var slideCount = $('#slider ul li').length;
+    // // alert(slideCount);
 
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
+    // function moveRight() {
+        
 
-    function moveRight() {
-        $('#slider ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
+    //     for (i = 1; i <= slideCount; i++) {
 
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
+    //         setTimeout(function(){
+    //         $('#slider ul li:nth-child(1)').fadeOut();
+        
+    //         }, 1000);
 
-    $('a.control_next').click(function () {
-        moveRight();
-    });
+    //         $('#slider ul li:nth-child(2)').fadeIn();
+
+    //     } 
+        
+    // };
+
+
+    // function moveRight() {
+    //     $('#slider ul').animate({
+    //         left: - slideWidth
+    //     }, 200, function () {
+    //         $('#slider ul li:first-child').appendTo('#slider ul');
+    //         $('#slider ul').css('left', '');
+    //     });
+    // };
 
 });    
