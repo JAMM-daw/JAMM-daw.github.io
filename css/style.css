@@ -297,6 +297,11 @@ section .contenedor-titulo .subtitulo {
   padding-top: 75px;
 }
 
+.kendo.saber-mas .col-sm-6:first-child {
+  background-image: url('../images/fondo-texto.png');
+  background-repeat: no-repeat;
+}
+
 .kendo.saber-mas .contenedor-texto:first-child {
   margin-top: 0px;
 }
@@ -327,6 +332,11 @@ section .contenedor-titulo .subtitulo {
   padding-top: 75px;
 }
 
+.iaido.saber-mas .col-sm-6:nth-child(2) {
+  background-image: url('../images/fondo-texto.png');
+  background-repeat: no-repeat;
+}
+
 .iaido.saber-mas .contenedor-texto:first-child {
   margin-top: 0px;
 }
@@ -342,6 +352,13 @@ section .contenedor-titulo .subtitulo {
 
 .iaido.saber-mas .contenedor-boton {
   margin-top: 25px;
+}
+
+.juego.intro{
+  background-image: url('../images/mancha-de-tinta.png');
+  background-color: #2d263e;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -368,13 +385,19 @@ section .contenedor-titulo .subtitulo {
 }
 
 section .botonera {
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.transicion {
-  padding: 50px 0;
+.juego.contenido {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: white;
 }
 
+.juego.contenido .row {
+  padding-bottom: 100px;
+}
 
 
 
@@ -437,6 +460,23 @@ section .botonera {
 .listado .contenedor-boton {
   padding-bottom: 75px;
   padding-top: 50px;
+}
+
+.listado-dojos {
+  list-style-image: url('../images/kendo-icon.png');
+  font-size: 1.3em;
+  padding-bottom: 50px;
+}
+
+
+
+
+.formulario {
+  background-image: url('../images/mancha-de-tinta-2.png');
+  background-color: #2d263e;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 32%;
 }
 
 .formulario .col-12 {
@@ -544,6 +584,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  background-image: url('../images/footer-fondo.png');
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: 50% bottom;
 }
 
 
