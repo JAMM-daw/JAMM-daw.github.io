@@ -1,329 +1,440 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<!--Codificación del sitio-->
-		<meta charset="UTF-8">
-		<html lang="es">
 
-		<!--SEO TAGS-->
-		<title>KI KEN TAI - El juego de cartas de Kendo</title>
-		<meta name="keywords" content="ki ken tai, kendo, juego de cartas">
-		<meta name="author" content="José Ángel Maestre, Circle Of Creators">
-		<meta name="description" content="KI KEN TAI es el primer juego de cartas de Kendo">
-		<!-- SITIO INVISIBLE HASTA PUESTA ONLINE -->
-		<meta name="robots" content="noindex, nofollow">
-		<link href="URL" rel="canonical">
+<head>
+    <!--Codificación del sitio-->
+    <meta charset="UTF-8">
+    <html lang="es">
 
-		<!-- Carga de scripts -->
+    <!--SEO TAGS-->
+    <title>KI KEN TAI - El juego de cartas de Kendo</title>
+    <meta name="keywords" content="ki ken tai, kendo, juego de cartas">
+    <meta name="author" content="José Ángel Maestre, Circle Of Creators">
+    <meta name="description" content="KI KEN TAI es el primer juego de cartas de Kendo">
+    <!-- SITIO INVISIBLE HASTA PUESTA ONLINE -->
+    <meta name="robots" content="noindex, nofollow">
+    <link href="URL" rel="canonical">
 
-		<!-- Bootstrap -->
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<!-- Flexbox-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-		<!-- jQuery-->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-		<!--jQuery UI-->
+    <!-- Carga de scripts -->
 
-		<!---->
-		<script src="./js/desplegar.js"></script>
-		<script src="./js/sticky-header.js"></script>
-		<!---->
-		<!---->
-		<!-- CSS & Responsive-->
-		<link rel="stylesheet" href="./css/style.css" type="text/css" >
-		<link rel="stylesheet" href="./fonts/fonts.css" type="text/css" >
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Flexbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--jQuery UI-->
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-	</head>
+    <!---->
+    <script src="./js/desplegar.js"></script>
+    <script src="./js/sticky-header.js"></script>
+    <!---->
+    <!---->
+    <!-- CSS & Responsive-->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
 
 
 <body>
-
-<!-- Menús -->
-
-	<header id="menu-01" class="desktop menu top">
-		<div class="row">
-			<div class="col-4">
-				<div class="contenedor-logo">
-					<a href="#"><img src="./images/kikentai-logo.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
-				</div>
-			</div>
-			<div class="col-8">
-				<ul class="lang-menu">
-					<li id="menu-es" class="lang-link"><a href="#">ES</a></li>
-					<li id="menu-en" class="lang-link"><a href="">EN</a></li>
-					<li id="menu-fr" class="lang-link"><a href="">FR</a></li>
-				</ul>
-				<ul class="menu">
-					<li id="menu-01" class="menu-link"><a href="">El Kendo</a></li>
-					<li id="menu-02" class="menu-link"><a href="">El juego</a></li>
-					<li id="menu-03" class="menu-link"><a href="">La demo</a></li>
-					<li id="menu-04" class="menu-link"><a href="">Dojos</a></li>
-					<li id="menu-05" class="menu-link"><a href="#">Contacto</a></li>
-				</ul>
-			</div>
-		</div>
-	</header>
-<!-- 	<header id="menu-02" class="desktop menu sticky oculto">
-			<div class="row">
-				<div class="col-4">
-					<div class="contenedor-logo">
-						<a href="#"><img src="./images/kikentai-logo.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
-					</div>
-				</div>
-				<div class="col-8">
-					<ul class="lang-menu">
-						<li id="menu-es" class="lang-link"><a href="#">ES</a></li>
-						<li id="menu-en" class="lang-link"><a href="">EN</a></li>
-						<li id="menu-fr" class="lang-link"><a href="">FR</a></li>
-					</ul>
-					<ul class="menu">
-						<li id="menu-01" class="menu-link"><a href="">El Kendo</a></li>
-						<li id="menu-02" class="menu-link"><a href="">El juego</a></li>
-						<li id="menu-03" class="menu-link"><a href="">La demo</a></li>
-						<li id="menu-04" class="menu-link"><a href="">Dojos</a></li>
-						<li id="menu-05" class="menu-link"><a href="#">Contacto</a></li>
-					</ul>
-				</div>
-			</div>
-	</header> -->
-<!-- 	<header id="menu-03" class="mobile menu top">
-		<img src="/images/logo-positivo-mobile.png" alt="logo del juego de cartas de kendo ki ken tai">
-	</header>
-	<header id="menu-04" class="mobile menu sticky">
-		<img src="/images/logo-negativo-mobile.png" alt="logo del juego de cartas de kendo ki ken tai">
-	</header> -->
-
-	<div class="contenedor-principal">
-	<!-- Slider de imágenes -->
-
-		<section class="slider">
-			<div id="slider">
-			  <a href="#" class="control_next">></a>
-			  <a href="#" class="control_prev"><</a>
-			  <ul>
-			    <li><img src="./images/practicar-kendo.jpg"></img></li>
-			    <li style="background: #aaa;"><img src="./images/practicar-kendo.jpg"></img></li>
-			    <li><img src="./images/practicar-kendo.jpg"></img></li>
-			    <li style="background: #aaa;"><img src="./images/practicar-kendo.jpg"></img></li>
-			  </ul>  
-			</div>
-
-	<!-- 		<div class="slider_option">
-			  <input type="checkbox" id="checkbox">
-			  <label for="checkbox">Autoplay Slider</label>
-			</div>  -->
-
-			<div class="solapa inferior blanco"></div>
-
-		</section>
-
-	<!-- Información sobre el Kendo visible -->
-
-		<section class="kendo intro">
-			<div class="row">
-				<div class="col-sm-6 col-12">
-					<div class="contenedor-titulo">
-						<img src="./images/kendo-enso-positivo.png">
-						<h2 class="subtitulo">¿Qué es el Kendo?</h2>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="contenedor-texto">
-						<p>
-							Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-						</p>
-					</div>
-
-					<div class="contenedor-boton centro">
-						<div class="boton">
-							<a href="">Quiero saber más</a>
-							<div class="fondo-boton"></div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-
-		<section class="kendo video">
-
-			<div class="solapa superior blanco"></div> 
-			<div class="caja-video">
-				<img src="./images/practicar-kendo.jpg"></img>
-			</div>
-
-
-
-			<div class="solapa inferior blanco oculto"></div>
-			<div class="solapa superior textura"></div>
-			
-		</section>
-
-	<!-- Información sobre el Kendo desplegable -->
-
-		<section class="kendo saber-mas oculto">
-
-			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
-
-			
-		</section>
-	<!-- Información sobre el Iaido desplegable -->
-
-		<section class="iaido intro oculto">
-			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
-
-
-			
-		</section>
-		<section class="iaido video oculto">
-
-			<div class="solapa superior blanco"></div>
-
-			<div class="caja-video">
-				<img src="./images/iaido_general_01.jpg"></img>
-			</div>
-			
-			<div class="solapa inferior blanco"></div>
-			
-		</section>
-
-		<section class="iaido saber-mas oculto">
-
-			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
-
-
-		</section>
-
-	<!-- Información sobre el juego de cartas visible -->
-
-
-		<section class="juego intro">
-
-			<div class="solapa superior azul oculto"></div>
-			<div class="row">
-				<div class="col-sm-6 col-12">
-					<div class="contenedor-imagen">
-						<img src="./images/cartas-kikentai.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-12">
-					<div class="contenedor-titulo">
-						<img src="./images/kendo-enso-positivo.png">
-						<h2 class="subtitulo">¿Qué es el Ki Ken Tai?</h2>
-					</div>
-					<div class="contenedor-texto">
-						<p>
-							Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="solapa inferior azul"></div>
-		</section>
-
-	<!-- Información sobre el juego de cartas desplegable -->
-
-
-		<section class="juego info oculto">
-
-			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
-
-			Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra. Ut eget rutrum felis. Vestibulum vel posuere quam. Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis. 
-
-			<div class="solapa inferior azul"></div>
-			
-		</section>
-	 
-		<section class="juego descargas oculto">
-
-		
-
-			Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra. Ut eget rutrum felis. Vestibulum vel posuere quam. Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis. 
-
-			<div class="solapa inferior azul"></div>
-			
-		</section>
-
-		<section class="juego demo oculto">
-
-			<div class="solapa inferior azul"></div>
-			
-		</section>
-
-	<!-- Mapa de dojos en España visible -->
-
-		<section class="mapa intro">
-
-			Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra. Ut eget rutrum felis. Vestibulum vel posuere quam. Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis. 
-			
-		</section>
-		<section class="mapa frame">
-
-			<div class="solapa superior blanco"></div>
-
-			<div class="caja-video">
-				<img src="./images/iaido_general_01.jpg"></img>
-			</div>
-			
-			<div class="solapa inferior blanco"></div>
-			
-		</section>
-
-		<!-- Listado de dojos en España desplegable -->
-		<section class="listado">
-
-			Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra. Ut eget rutrum felis. Vestibulum vel posuere quam. Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis. 
-
-			
-		</section>
-
-		<!-- Formulario de contacto -->
-		<section class="formulario">
-			<form>
-						Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra. Ut eget rutrum felis. Vestibulum vel posuere quam. Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis. 
-				
-			</form>
-		</section>
-
-	</div>
-
-<!-- Footer -->
-
-	<footer>
-
-		<div class="row">
-			<div class="col-12">
+    
+    <!-- Menús -->
+    <header id="menu-01" class="desktop menu top">
+        <div class="row">
+            <div class="col-4">
+                <div class="contenedor-logo">
+                    <a href="#"><img src="./images/kikentai-logo.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                </div>
+            </div>
+            <div class="col-8">
+                <ul class="lang-menu">
+                    <li id="menu-es" class="lang-link"><a href="#">ES</a></li>
+                    <li id="menu-en" class="lang-link"><a href="">EN</a></li>
+                    <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
+                </ul>
+                <ul class="menu">
+                    <li id="menu-01" class="menu-link"><a href="">El Kendo</a></li>
+                    <li id="menu-02" class="menu-link"><a href="">El juego</a></li>
+                    <li id="menu-03" class="menu-link"><a href="">La demo</a></li>
+                    <li id="menu-04" class="menu-link"><a href="">Dojos</a></li>
+                    <li id="menu-05" class="menu-link"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 	<header id="menu-02" class="desktop menu sticky oculto">
 				<div class="row">
-					<div class="col-12">
-						<div class="logo-footer">
-							<img src="./images/circle-of-creators.png">
+					<div class="col-4">
+						<div class="contenedor-logo">
+							<a href="#"><img src="./images/kikentai-logo.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
 						</div>
+					</div>
+					<div class="col-8">
+						<ul class="lang-menu">
+							<li id="menu-es" class="lang-link"><a href="#">ES</a></li>
+							<li id="menu-en" class="lang-link"><a href="">EN</a></li>
+							<li id="menu-fr" class="lang-link"><a href="">FR</a></li>
+						</ul>
+						<ul class="menu">
+							<li id="menu-01" class="menu-link"><a href="">El Kendo</a></li>
+							<li id="menu-02" class="menu-link"><a href="">El juego</a></li>
+							<li id="menu-03" class="menu-link"><a href="">La demo</a></li>
+							<li id="menu-04" class="menu-link"><a href="">Dojos</a></li>
+							<li id="menu-05" class="menu-link"><a href="#">Contacto</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="row iconos-redes">
-					<div class="col-sm-6">
-						<div class="caja-icono">
-							<img src="./images/facebook.png">
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="caja-icono">
-							<img src="./images/email.png">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 copyright">
-				<p>Copyright 2020 - Ki Ken Tai - Circle of Creators</p>
-			</div>
-		</div>
-			
-		</div>
-		
-	</footer>
-	
+		</header> -->
+    <!-- 	<header id="menu-03" class="mobile menu top">
+			<img src="/images/logo-positivo-mobile.png" alt="logo del juego de cartas de kendo ki ken tai">
+		</header>
+		<header id="menu-04" class="mobile menu sticky">
+			<img src="/images/logo-negativo-mobile.png" alt="logo del juego de cartas de kendo ki ken tai">
+		</header> -->
+
+    <div class="contenedor-principal">
+        
+        <!-- Slider de imágenes -->
+
+        <section class="slider">
+            <div id="slider">
+                <a href="#" class="control_next"></a>
+                <a href="#" class="control_prev"></a>
+                <ul>
+                    <li><img src="./images/practicar-kendo.jpg"></li>
+                    <li style="background: #aaa;"><img src="./images/practicar-kendo.jpg"></li>
+                    <li><img src="./images/practicar-kendo.jpg"></li>
+                    <li style="background: #aaa;"><img src="./images/practicar-kendo.jpg"></li>
+                </ul>
+            </div>
+
+            <!-- 		<div class="slider_option">
+				  <input type="checkbox" id="checkbox">
+				  <label for="checkbox">Autoplay Slider</label>
+				</div>  -->
+
+            <div class="solapa inferior blanco"></div>
+
+        </section>
+
+        <!-- Información sobre el Kendo visible -->
+
+        <section class="kendo intro">
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <div class="contenedor-titulo">
+                        <img src="./images/kendo-enso-positivo.png">
+                        <h2 class="subtitulo">¿Qué es el Kendo?</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="contenedor-texto">
+                        <p>
+                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
+                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
+                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
+                        </p>
+                    </div>
+
+                    <div class="contenedor-boton centro">
+                        <div class="boton">
+                            <a href="">Quiero saber más</a>
+                            <div class="fondo-boton"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="kendo video">
+
+            <div class="solapa superior blanco"></div>
+            <div class="caja-video">
+                <img src="./images/practicar-kendo.jpg">
+            </div>
+
+
+
+            <div class="solapa inferior blanco oculto"></div>
+            <div class="solapa superior textura"></div>
+
+        </section>
+
+        <!-- Información sobre el Kendo desplegable -->
+
+        <section class="kendo saber-mas oculto">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero
+            vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas
+            rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non
+            sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
+
+
+        </section>
+        <!-- Información sobre el Iaido desplegable -->
+
+        <section class="iaido intro oculto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero
+            vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas
+            rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non
+            sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
+
+
+
+        </section>
+        <section class="iaido video oculto">
+
+            <div class="solapa superior blanco"></div>
+
+            <div class="caja-video">
+                <img src="./images/iaido_general_01.jpg">
+            </div>
+
+            <div class="solapa inferior blanco"></div>
+
+        </section>
+
+        <section class="iaido saber-mas oculto">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero
+            vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas
+            rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non
+            sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit.
+
+
+        </section>
+
+        <!-- Información sobre el juego de cartas visible -->
+
+
+        <section class="juego intro">
+
+            <div class="solapa superior azul oculto"></div>
+            <div class="row sin-margen-izq">
+                <div class="col-sm-6 col-12">
+                    <div class="contenedor-imagen">
+                        <img src="./images/cartas-kikentai.png">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="contenedor-titulo">
+                        <img src="./images/kendo-enso-negativo.png">
+                        <h2 class="subtitulo">¿Qué es Ki Ken Tai?</h2>
+                    </div>
+                    <div class="contenedor-texto">
+                        <p>
+                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
+                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
+                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section class="juego botonera">
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <div class="contenedor-boton centro">
+                            <div class="boton">
+                                <a href="">Más información</a>
+                                <div class="fondo-boton"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="contenedor-boton centro">
+                            <div class="boton">
+                                <a href="">Material de descarga</a>
+                                <div class="fondo-boton"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                        <div class="contenedor-boton centro">
+                            <div class="boton">
+                                <a href="">Demostración</a>
+                                <div class="fondo-boton"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="transicion">
+                <div style="padding: 50px;"></div>
+                <div class="solapa inferior azul"></div>
+            </section>
+        </section>
+
+        <!-- Información sobre el juego de cartas desplegable -->
+
+
+        <section class="juego info oculto">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo accumsan mauris, hendrerit facilisis ante. Integer augue urna, pulvinar quis eros eget, dictum scelerisque lectus. Nulla a magna eros. Mauris auctor lacinia diam, ac bibendum libero
+            vestibulum et. Nullam quis sem efficitur, feugiat purus tempor, consectetur elit. Sed sed lacinia nisi. Mauris viverra, libero at vulputate maximus, ipsum velit mollis magna, eget pretium nulla justo nec neque. Nullam et elementum leo. Maecenas
+            rhoncus tristique ipsum, iaculis placerat nisl dapibus eu. Curabitur urna tellus, rutrum placerat eleifend id, commodo quis ipsum. Suspendisse consectetur hendrerit mi nec fringilla. Etiam eros arcu, egestas ut fringilla vel, elementum non
+            sapien. Curabitur sed neque urna. Nam condimentum dolor mauris, eu ornare arcu sodales semper. Donec tincidunt vitae elit non cursus. Vivamus sollicitudin ullamcorper suscipit. Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla
+            ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra. Ut eget rutrum felis. Vestibulum vel posuere quam.
+            Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis.
+
+            <div class="solapa inferior azul"></div>
+
+        </section>
+
+        <section class="juego descargas oculto">
+
+
+
+            Ut arcu mauris, pulvinar sed tempor non, ultrices et enim. Nulla ante urna, pharetra a suscipit eu, elementum ac sapien. Fusce nec justo volutpat, aliquam urna sagittis, fermentum purus. Morbi a commodo neque. Morbi non dolor quis quam accumsan viverra.
+            Ut eget rutrum felis. Vestibulum vel posuere quam. Sed eget aliquam lectus. Donec hendrerit faucibus dignissim. Maecenas et diam ut nisi aliquam blandit. Duis lobortis nisi leo, at posuere mauris auctor quis.
+
+            <div class="solapa inferior azul"></div>
+
+        </section>
+
+        <section class="juego demo oculto">
+
+            <div class="solapa inferior azul"></div>
+
+        </section>
+
+        <!-- Mapa de dojos en España visible -->
+
+        <section class="mapa intro">
+
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <div class="contenedor-titulo">
+                        <img src="./images/kendo-enso-positivo.png">
+                        <h2 class="subtitulo">¿Dónde entrenar Kendo?</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="contenedor-texto">
+                        <p>
+                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
+                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
+                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="mapa frame">
+
+            <div class="solapa superior blanco"></div>
+
+            <div class="caja-video">
+                <img src="./images/iaido_general_01.jpg">
+            </div>
+
+            <div class="solapa inferior blanco"></div>
+
+        </section>
+
+        <!-- Listado de dojos en España desplegable -->
+        <section class="listado">
+
+            <div class="contenedor-boton centro">
+                <div class="boton">
+                    <a href="">Listado de Dojos</a>
+                    <div class="fondo-boton"></div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="formulario">
+            <div class="row">
+                <form action="/#contacto-es" method="post" class="form-contacto form-contacto-es" novalidate="novalidate">
+                    <div class="campos-ocultos">
+
+                        <input type="hidden" name="idioma" value="es">
+                    </div>
+                    <div class="row estructura-formulario">
+	                    <div class="col-12 col-sm-6">
+	                        <div class="caja-formulario nombre">
+	                            <input type="text" name="nombre" value="" class="input input-texto obligatorio" aria-required="true" aria-invalid="false" placeholder="Nombre*">
+	                        </div>
+	                    </div>
+	                    <div class="col-12 col-sm-6">
+	                        <div class="caja-formulario email">
+	                            <input type="email" name="email" value="" class="input input-texto obligatorio" aria-required="true" aria-invalid="false" placeholder="E-mail*">
+	                        </div>
+	                    </div>
+	                    <div class="col-12">
+	                        <div class="caja-formulario mensaje">
+	                            <input type="textarea" name="mensaje" value="" class="input input-texto obligatorio" aria-invalid="false" placeholder="Mensaje*">
+	                        </div>
+	                    </div>
+	                    <div class="col-12">
+	                        <div class="caja-formulario check-privacy">
+	                            <input type="checkbox" name="condiciones-1" value="1" aria-invalid="false">
+	                            <a>Por favor, marca esta casilla si quieres recibir nuestra newsletter.</a>
+	                        </div>
+	                    </div>
+	                    <div class="col-12">
+	                        <div class="caja-formulario check-privacy">
+	                            <input type="checkbox" name="condiciones-2" value="1" aria-invalid="false">
+	                            <a>Por favor, marca esta casilla para aceptar las <a href="" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
+	                        </div>
+	                    </div>
+	                    <div class="col-12">
+	                        <div class="caja-formulario-boton">
+	                            <input type="submit" value="Enviar" class="input-submit obligatorio" disabled="">
+	                            <div class="ajax-loader"></div>
+	                        </div>
+	                        <div class="caja-respuestas campos-ocultos"></div>
+	                    </div>
+	                </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="logo-footer">
+                            <img src="./images/circle-of-creators.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row iconos-redes">
+                    <div class="col-sm-6">
+                        <div class="caja-icono izq">
+                            <a href="https://facebook.com/">
+									<img src="./images/facebook.png">
+								</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="caja-icono der">
+                            <a href="mailto:">
+									<img src="./images/email.png">
+								</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 copyright">
+                <p> Ki Ken Tai es una marca registrada de Circle of Creators - Copyright 2020</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

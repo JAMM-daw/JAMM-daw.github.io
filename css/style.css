@@ -6,10 +6,13 @@ li a, p {
 
 @media all and (min-width: 768px) {
   section .row {
-    padding: 12%;
+    padding: 0 12%;
   }
-  .juego.intro .row {
-    padding-left:0;
+  section .sin-margen-izq {
+    padding-left: 0;
+  }
+  section .full, section .row .estructura-formulario {
+    padding: 0;
   }
 
 }
@@ -32,7 +35,7 @@ li a, p {
   max-height: 180px;
   margin: 0;
   top: 0;
-  z-index: 1;
+  z-index: 25;
 }
 
 .desktop.menu.sticky {
@@ -214,7 +217,8 @@ li a, p {
 }
 
 .juego, .formulario, .copyright {
-  background-image: url('../images/textura-azul.jpg');
+  /*background-image: url('../images/textura-azul.jpg');*/
+  background-color: #2d263e;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -244,18 +248,51 @@ li a, p {
   right: 12%;
 }*/
 
-.contenedor-titulo {
+section .contenedor-titulo {
   position: relative;
   width: 100%;
   margin-left: 0;
 }
 
-.contenedor-titulo .subtitulo {
+section .contenedor-titulo .subtitulo {
   position: absolute;
   bottom: 52px;
   font-size: 40px;
   letter-spacing: 0.5px;
 }
+
+
+.juego.intro .contenedor-titulo {
+  position: relative;
+  width: 100%;
+  margin-left: 0;
+  text-align: right;
+}
+
+.juego.intro .contenedor-titulo .subtitulo {
+  position: absolute;
+  bottom: 52px;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+  color: white;
+  right: 0;
+}
+
+.juego.intro .contenedor-texto {
+  text-align: right;
+  padding-left: 25%;
+}
+
+section .botonera {
+  padding: 80px;
+}
+
+.transicion {
+  padding: 50px 0;
+}
+
+
+
 
 /*.contenedor-titulo {
   text-align: center;
@@ -309,36 +346,121 @@ li a, p {
 }
 
 
-.oculto {
+.oculto, .campos-ocultos {
   display: none;
+}
+
+.form-contacto {
+  margin: 150px 0;
+}
+
+
+.form-contacto .col-12, .form-contacto .col-sm-6 {
+  padding:0;
+}
+
+.form-contacto .caja-formulario.nombre input,
+.form-contacto .caja-formulario.email input,
+.form-contacto .caja-formulario.mensaje input
+ {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-image: url('../images/fondo-botones.png');
+  background-size: 100%;
+  padding: 15px 0 15px 40px;
+  font-size: 1.5em;
+  font-family: 'Georgia';
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+
+.form-contacto .caja-formulario {
+  max-width: 100%;
+  
+}
+
+.form-contacto .caja-formulario.nombre {
+  padding-right:30px;
+}
+
+.form-contacto .caja-formulario.email {
+  padding-left:30px;
+}
+
+.form-contacto .caja-formulario.mensaje {
+  max-width: 100%;
+  margin-top: 35px;
 }
 
 
 
 /*FOOTER*/
+
+.contenedor-principal {
+  position: relative;
+  z-index: 20;
+  margin-bottom: 300px;
+  -webkit-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
+  -moz-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
+  /* box-shadow: 0px 3px 15px 1px rgb(111, 111, 111); */
+}
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
 footer .logo-footer {
-  max-width: 100px;
+  max-width: 140px;
   margin: auto;
 }
 
-footer .caja-icono {
-  max-width: 40px;
-  margin: auto;
-}
-
-footer img {
+footer .logo-footer img {
   max-width: 100%;
+}
+
+footer .caja-icono.der {
+  text-align: left;
+}
+
+footer .caja-icono.izq {
+  text-align: right;
+}
+
+footer .caja-icono.izq img {
+  max-width: 30px;
+  margin-right: 0px;
+}
+
+footer .caja-icono.der img {
+  max-width: 35px;
+  margin-left: 0px;
 }
 
 .iconos-redes {
   max-width: 200px;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 footer .copyright {
   color: white;
   text-align: center;
 }
+
+footer .copyright p {
+  margin: 10px 0;
+  font-size: 0.8em;
+}
+
+
 /*SLIDER*/
 
 #slider {
