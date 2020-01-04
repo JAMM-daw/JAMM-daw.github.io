@@ -1,29 +1,8 @@
 
 
-li a, p {
+h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Georgia';
 }
-
-@media all and (min-width: 768px) {
-  section .row {
-    padding: 0 12%;
-  }
-  section .sin-margen-izq {
-  padding-left: 0;
-  padding-top: 75px;
-}
-  section .full, section .row .estructura-formulario {
-    padding: 0;
-  }
-
-}
-
-
-
-.centro {
-  text-align: center;
-}
-
 
 
 /* HEADER MENU */
@@ -39,19 +18,6 @@ li a, p {
   margin: 0;
   top: 0;
   z-index: 25;
-}
-
-.desktop.menu.sticky {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 180px;
-  margin: 0;
-  top: 0;
-  z-index: 200;
-  background-color: white;
-  transition: 0.5s transform cubic-bezier(.3,.73,.3,.74);
 }
 
 .desktop.menu.top .row {
@@ -73,6 +39,134 @@ li a, p {
 .contenedor-logo img {
   max-width: 100%;
 }
+
+
+
+/*ENLACES*/
+
+.desktop.menu ul {
+  list-style: none;
+  text-align: right;
+  margin-right: 50px;
+  margin-bottom: 0;
+}
+
+
+.desktop.menu .lang-menu {
+  margin-top: 30px;
+}
+
+.desktop.menu .lang-link {
+  display: inline;
+  margin: 0 2px;
+}
+
+.desktop.menu .lang-link:last-child {
+  margin-right: 20px;
+}
+
+.desktop.menu .lang-link a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.desktop.menu .menu {
+  margin-top: 5px;
+}
+
+.desktop.menu .menu-link {
+  display: inline;
+  margin: 0 20px;
+}
+
+.desktop.menu .menu-link a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  text-shadow: 1px 1px #0006;
+}
+
+/* STICKY HEADER */
+
+
+
+.desktop.menu.sticky {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 66px;
+  margin: 0;
+  top: 0;
+  z-index: 200;
+  background-color: white;
+  transition: 0.5s transform cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(111, 111, 111, 0.47);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(111, 111, 111, 0.47);
+  box-shadow: 0px 0px 15px 0px rgba(111, 111, 111, 0.47);
+  display: none;
+}
+
+.desktop.menu.sticky .contenedor-logo {
+  max-width: 100px;
+}
+
+.desktop.menu.sticky .lang-menu {
+  margin-top: 6px;
+}
+
+.desktop.menu.sticky .menu {
+  margin-top: 2px;
+}
+
+ .desktop.menu.sticky .menu-link a {
+  color: black;
+  text-shadow: 1px 1px #b0b0b073;
+}
+
+.desktop.menu.sticky .lang-link a {
+  color: black;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+section .row {
+    margin: 0;
+  }
+
+@media all and (min-width: 768px) {
+  section .row {
+    padding: 0 12%;
+  }
+  section .sin-margen-izq {
+  padding-left: 0;
+  padding-top: 75px;
+}
+  section .full, section .row .estructura-formulario {
+    padding: 0;
+  }
+
+}
+
+
+.centro {
+  text-align: center;
+}
+
+
+.contenedor-principal {
+  position: relative;
+  z-index: 20;
+  margin-bottom: 300px;
+  -webkit-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
+  -moz-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
+  box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
+}
+
+
+/* SLIDER */
 
 
 .slider .row {
@@ -129,72 +223,16 @@ li a, p {
 }
 */
 
-
-
-/*ENLACES*/
-
-.desktop.menu ul {
-  list-style: none;
-  text-align: right;
-  margin-right: 50px;
-  margin-bottom: 0;
+.slider .contenedor-boton {
+  padding-top: 45px;
 }
 
-
-.desktop.menu .lang-menu {
-  margin-top: 30px;
+.boton.portada-2 {
+  display: none;
 }
 
-.desktop.menu .lang-link {
-  display: inline;
-  margin: 0 2px;
-}
-
-.desktop.menu .lang-link:last-child {
-  margin-right: 20px;
-}
-
-.desktop.menu .lang-link a {
-  color: white;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.desktop.menu .menu {
-  margin-top: 5px;
-}
-
-.desktop.menu .menu-link {
-  display: inline;
-  margin: 0 20px;
-}
-
-.desktop.menu .menu-link a {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  text-shadow: 1px 1px #0006;
-}
-
-/* STICKY HEADER */
-
-.desktop.menu.sticky {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 180px;
-  margin: 0;
-  top: 0;
-}
-
-.contenedor-principal {
-  position: relative;
-  z-index: 20;
-  margin-bottom: 300px;
-  -webkit-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
-  -moz-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
-  /* box-shadow: 0px 3px 15px 1px rgb(111, 111, 111); */
+.boton.portada-2 a {
+  font-size: 1.3em;
 }
 
 /*ELEMENTOS DEL FONDO*/
