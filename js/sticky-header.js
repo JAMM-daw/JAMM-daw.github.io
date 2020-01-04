@@ -1,9 +1,17 @@
 $(document).ready(function() {
 
-  $(window).on("scroll", function() {
-    var fromTop = $("body").scrollTop();
-    $('.sticky').show("down", (fromTop > 800));
+$(window).scroll(function(){
 
-  });
+
+	if ( $(window).scrollTop() > 300 ) {
+		$(".desktop.menu.sticky").fadeIn();	
+	}
+
+	else {
+		$(".desktop.menu.sticky").fadeOut();
+	}
+});
+
+
 
 });
