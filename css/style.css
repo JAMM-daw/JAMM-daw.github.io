@@ -227,6 +227,10 @@ section .row {
   padding-top: 45px;
 }
 
+.boton {
+  cursor: pointer;
+}
+
 .boton.portada-2 {
   display: none;
 }

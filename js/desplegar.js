@@ -31,6 +31,7 @@ jQuery(document).ready(function() {
 
 			if (id == "iaido-1") {
 				$(".kendo.saber-mas .solapa.superior.textura").hide();
+
 			}
 
 			if (id == "iaido-2") {
