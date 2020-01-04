@@ -160,9 +160,9 @@
 	            <div class="caja-video">
 	            	<div class="row">
 		        		<div class="col-12">
-		                    <div class="contenedor-boton centro">
-		                        <div class="boton">
-		                            <a href="">Quiero saber más</a>
+		                    <div class="contenedor-boton centro inicio">
+		                        <div id="kendo" class="boton boton-desplegar">
+		                            <a>Quiero saber más</a>
 		                            <div class="fondo-boton"></div>
 		                        </div>
 		                    </div>
@@ -179,7 +179,7 @@
 
         <!-- Información sobre el Kendo desplegable -->
 
-        <section class="kendo saber-mas oculto">
+        <section id="kendo-saber-mas" class="kendo saber-mas oculto ">
 
             <div class="row">
                 <div class="col-sm-6 col-12">
@@ -218,7 +218,7 @@
                 </div>
                 <div class="col-12">
                 	<div class="contenedor-boton centro">
-                        <div class="boton">
+                        <div id ="iaido-1" class="boton boton-desplegar">
                             <a href="">¿Qué es el Iaido?</a>
                             <div class="fondo-boton"></div>
                         </div>
@@ -227,11 +227,12 @@
 
             </div>
 
-
+            <div class="solapa inferior blanco oculto"></div>
+            <div class="solapa superior textura"></div>
         </section>
         <!-- Información sobre el Iaido desplegable -->
 
-        <section class="iaido intro oculto">
+        <section class="iaido iaido-1 intro oculto">
             <div class="row">
                 <div class="col-sm-6 col-12">
                     <div class="contenedor-titulo">
@@ -250,15 +251,15 @@
                 </div>
             </div>
         </section>
-        <section class="iaido video oculto">
+        <section class="iaido iaido-1 video oculto">
 
             <div class="solapa superior blanco"></div>
 
             <div class="caja-video">
             	<div class="row">
 		        		<div class="col-12">
-		                    <div class="contenedor-boton centro">
-		                        <div class="boton">
+		                    <div class="contenedor-boton centro inicio">
+		                        <div id="iaido-2" class="boton boton-desplegar">
 		                            <a href="">Quiero saber más</a>
 		                            <div class="fondo-boton"></div>
 		                        </div>
@@ -268,11 +269,12 @@
                 <img src="./images/iaido_general_01.jpg">
             </div>
 
-            <div class="solapa inferior blanco"></div>
+            <div class="solapa inferior blanco oculto"></div>
+            <div class="solapa superior textura"></div>
 
         </section>
 
-        <section class="iaido saber-mas oculto">
+        <section class="iaido iaido-2 saber-mas oculto">
 
             <div class="row">
                 <div class="col-sm-6 col-12">
@@ -311,7 +313,7 @@
                 </div>
             </div>
 
-
+            <div class="solapa superior textura"></div>
         </section>
 
         <!-- Información sobre el juego de cartas visible -->
@@ -421,53 +423,61 @@
 
             <div class="solapa superior blanco"></div>
 
-            <div class="caja-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12590.96189238244!2d-4.78895722573242!3d37.91312843066744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf0453b781c1%3A0x96eb6989cf7511e4!2sFUENTE%20DE%20LA%20PALOMERA!5e0!3m2!1ses!2ses!4v1578063108291!5m2!1ses!2ses" width="100%" height="450" frameborder="0" style="border:0;"></iframe>
-            </div>
+
+                        <div class="caja-mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12590.96189238244!2d-4.78895722573242!3d37.91312843066744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf0453b781c1%3A0x96eb6989cf7511e4!2sFUENTE%20DE%20LA%20PALOMERA!5e0!3m2!1ses!2ses!4v1578063108291!5m2!1ses!2ses" width="100%" height="450" frameborder="0" style="border:0;"></iframe>
+                        </div>
+
 
             <div class="solapa inferior blanco"></div>
 
         </section>
 
-        <!-- Listado de dojos en España desplegable -->
+        
         <section class="listado">
         	<div class="row">
         		<div class="col-12">
-		            <div class="contenedor-boton centro">
-		                <div class="boton">
+		            <div class="contenedor-boton centro inicio">
+		                <div id="listado-de-dojos" class="boton boton-desplegar">
 		                    <a href="">Listado de Dojos</a>
 		                    <div class="fondo-boton"></div>
 		                </div>
 		            </div>
 		        </div>
-		        <div class="col-sm-6 col-12">
-		        	<ul class="listado-dojos">
-		        		<li>Andalucía</li>
-		        		<li>Aragón</li>
-		        		<li>Principado de Asturias</li>
-		        		<li>Baleares</li>
-		        		<li>Canarias</li>
-		        		<li>Cantabria</li>
-		        		<li>Castilla-La Mancha</li>
-		        		<li>Castilla y León</li>
-		        		<li>Ceuta y Melilla</li>
-		        	</ul>
-		        </div>
-		        <div class="col-sm-6 col-12">
-		        	<ul class="listado-dojos">
-		        		<li>Cataluña</li>
-		        		<li>Extremadura</li>
-		        		<li>Galicia</li>
-		        		<li>La Rioja</li>
-		        		<li>Comunidad de Madrid</li>
-		        		<li>Región de Murcia</li>
-		        		<li>Comunidad Foral de Navarra</li>
-		        		<li>País Vasco</li>
-		        		<li>Comunidad Valenciana</li>
-		        	</ul>
-		        </div>
             </div>
+        </section>
 
+        <!-- Listado de dojos en España desplegable -->
+
+        <section class="listado-de-dojos oculto">
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <ul class="listado-dojos">
+                        <li>Andalucía</li>
+                        <li>Aragón</li>
+                        <li>Principado de Asturias</li>
+                        <li>Baleares</li>
+                        <li>Canarias</li>
+                        <li>Cantabria</li>
+                        <li>Castilla-La Mancha</li>
+                        <li>Castilla y León</li>
+                        <li>Ceuta y Melilla</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <ul class="listado-dojos">
+                        <li>Cataluña</li>
+                        <li>Extremadura</li>
+                        <li>Galicia</li>
+                        <li>La Rioja</li>
+                        <li>Comunidad de Madrid</li>
+                        <li>Región de Murcia</li>
+                        <li>Comunidad Foral de Navarra</li>
+                        <li>País Vasco</li>
+                        <li>Comunidad Valenciana</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Formulario de contacto -->

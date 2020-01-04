@@ -299,7 +299,7 @@ section .row {
 }
 
 
-.kendo.intro, .kendo.saber-mas, .iaido.intro, .iaido.saber-mas, .mapa.intro, .listado {
+.kendo.intro, .kendo.saber-mas, .iaido.intro, .iaido.saber-mas, .mapa.intro, .listado, .listado-de-dojos {
   background-image: url('../images/madera-cortado.jpg');
   background-size: cover;
   background-repeat: repeat;
@@ -401,6 +401,7 @@ section .contenedor-titulo .subtitulo {
 
 .kendo.saber-mas {
   padding-top: 75px;
+  position: relative;
 }
 
 .kendo.saber-mas .col-sm-6:first-child {
@@ -422,6 +423,7 @@ section .contenedor-titulo .subtitulo {
 
 .kendo.saber-mas .contenedor-boton {
   margin-top: 25px;
+  margin-bottom: 125px;
 }
 
 
@@ -436,6 +438,7 @@ section .contenedor-titulo .subtitulo {
 
 .iaido.saber-mas {
   padding-top: 75px;
+  position: relative;
 }
 
 .iaido.saber-mas .col-sm-6:nth-child(2) {
@@ -565,14 +568,22 @@ section .botonera {
   opacity: 0.5;
 }
 
+.campos-ocultos {
+  display: none;
+}
 
-.oculto, .campos-ocultos {
-  /*display: none;*/
+.oculto {
+  display: none;
 }
 
 .listado .contenedor-boton {
   padding-bottom: 75px;
   padding-top: 50px;
+}
+
+.listado-de-dojos {
+  position: relative;
+  height: 100% !important;
 }
 
 .listado-dojos {
