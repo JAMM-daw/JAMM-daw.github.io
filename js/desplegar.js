@@ -1,4 +1,18 @@
 jQuery(document).ready(function() {
+
+	$(".boton.portada-1").click(function () {
+		$(".boton.portada-1").fadeOut();
+		$(".boton.portada-2").fadeIn();
+	});
+
+	$(".boton.portada-2").click(function () {
+		$(".boton.portada-2").fadeOut();
+		$("html, body").animate({
+    				scrollTop: $(".kendo.intro").offset().top
+				}, 2000);
+	});
+
+	
 			
 	$(".boton-desplegar").click(function () {
 
