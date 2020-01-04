@@ -509,6 +509,18 @@ section .botonera {
   padding-bottom: 80px;
 }
 
+section .botonera .contenedor-boton {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+}
+
+section .botonera .contenedor-boton .boton {
+  display: inline-block;
+  width: 33.3%;
+}
+
 .juego.contenido {
   padding-top: 50px;
   padding-bottom: 100px;

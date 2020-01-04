@@ -24,7 +24,7 @@
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!--jQuery UI-->
-
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="crossorigin="anonymous"></script>
     <!---->
     <script src="./js/desplegar.js"></script>
     <script src="./js/sticky-header.js"></script>
@@ -33,9 +33,9 @@
     <!---->
     <!---->
     <!-- CSS & Responsive-->
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    
     <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
-
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 
 </head>
 
@@ -58,7 +58,7 @@
                     <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
                 </ul>
                 <ul class="menu">
-                    <li id="menu-01" class="menu-link"><a href="#kendo">Kendo</a></li>
+                    <li id="menu-01" class="menu-link"><a href="#el-kendo">El Kendo</a></li>
                     <li id="menu-02" class="menu-link"><a href="#el-juego">El juego</a></li>
                     <li id="menu-03" class="menu-link"><a href="#la-demo">La demo</a></li>
                     <li id="menu-04" class="menu-link"><a href="#dojos">Dojos</a></li>
@@ -81,7 +81,7 @@
                     <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
                 </ul>
                 <ul class="menu">
-                    <li id="menu-01" class="menu-link"><a href="#kendo">Kendo</a></li>
+                    <li id="menu-01" class="menu-link"><a href="#el-kendo">El Kendo</a></li>
                     <li id="menu-02" class="menu-link"><a href="#el-juego">El juego</a></li>
                     <li id="menu-03" class="menu-link"><a href="#la-demo">La demo</a></li>
                     <li id="menu-04" class="menu-link"><a href="#dojos">Dojos</a></li>
@@ -111,11 +111,11 @@
         		<div class="col-12">
                     <div class="contenedor-boton centro">
                         <div class="boton portada-1">
-                            <a href="">Ver una demostración</a>
+                            <a>Ver una demostración</a>
                             <div class="fondo-boton"></div>
                         </div>
                         <div class="boton portada-2">
-                            <a href="">¡Espera!<br>¿Pero qué es el Kendo?</a>
+                            <a>¡Espera!<br>¿Pero qué es el Kendo?</a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -135,10 +135,10 @@
 
         <!-- Información sobre el Kendo visible -->
 
-        <section class="kendo intro">
+        <section id="el-kendo" class="kendo intro">
             <div class="row">
                 <div class="col-sm-6 col-12">
-                    <div id="kendo" class="contenedor-titulo">
+                    <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
                         <h2 class="subtitulo">¿Qué es el Kendo?</h2>
                     </div>
@@ -219,7 +219,7 @@
                 <div class="col-12">
                 	<div class="contenedor-boton centro">
                         <div id ="iaido-1" class="boton boton-desplegar">
-                            <a href="">¿Qué es el Iaido?</a>
+                            <a>¿Qué es el Iaido?</a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -260,7 +260,7 @@
 		        		<div class="col-12">
 		                    <div class="contenedor-boton centro inicio">
 		                        <div id="iaido-2" class="boton boton-desplegar">
-		                            <a href="">Quiero saber más</a>
+		                            <a>Quiero saber más</a>
 		                            <div class="fondo-boton"></div>
 		                        </div>
 		                    </div>
@@ -343,66 +343,46 @@
                     </div>
                 </div>
             </div>
-            <div class="row botonera">
-                <div class="col-sm-4 col-12">
-                    <div class="contenedor-boton centro">
-                        <div class="boton">
-                            <a href="">Más información</a>
-                            <div class="fondo-boton"></div>
+
+            <div id="tabs">
+
+                <div id ="la-demo" class="row botonera">
+                    <ul class="contenedor-boton centro">
+                        <li class="boton"><a href="#tabs-1">Más información</a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-2">Material de descarga</a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-3">Demostración</a><div class="fondo-boton"></div></li>
+                    </ul>
+                </div>
+
+                <div id="tabs-1" class="row">
+                    <div class="col-sm-6 col-12">
+                        <div class="contenedor-texto">
+                            <p>
+                                Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <div class="contenedor-boton centro">
-                        <div class="boton">
-                            <a href="">Material de descarga</a>
-                            <div class="fondo-boton"></div>
+                    <div class="col-sm-6 col-12">
+                        <div class="contenedor-imagen">
+                            <img src="./images/kendo-generica.jpg">
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4 col-12">
-                    <div class="contenedor-boton centro">
-                        <div class="boton">
-                            <a href="">Demostración</a>
-                            <div class="fondo-boton"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Información sobre el juego de cartas desplegable -->
-
-
-        <section class="juego contenido">
-
-        	<div class="row">
-                <div class="col-sm-6 col-12">
-                	<div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-12">
-                    <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
-                    </div>
                 </div>
 
             </div>
 
             <div class="solapa inferior azul"></div>
-
+            
         </section>
 
         <!-- Mapa de dojos en España visible -->
 
         <section class="mapa intro">
 
-            <div class="row">
+            <div id="dojos" class="row">
                 <div class="col-sm-6 col-12">
-                    <div id="dojos" class="contenedor-titulo">
+                    <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
                         <h2 class="subtitulo">¿Dónde entrenar Kendo?</h2>
                     </div>
@@ -439,7 +419,7 @@
         		<div class="col-12">
 		            <div class="contenedor-boton centro inicio">
 		                <div id="listado-de-dojos" class="boton boton-desplegar">
-		                    <a href="">Listado de Dojos</a>
+		                    <a>Listado de Dojos</a>
 		                    <div class="fondo-boton"></div>
 		                </div>
 		            </div>
@@ -481,10 +461,10 @@
         </section>
 
         <!-- Formulario de contacto -->
-        <section class="formulario">
+        <section id="contacto" class="formulario">
             <div class="row">
             	<div class="col-12">
-                    <div id="contacto" class="contenedor-titulo">
+                    <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-negativo.png">
                         <h2 class="subtitulo">Contacto</h2>
                     </div>
