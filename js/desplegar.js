@@ -3,7 +3,35 @@ jQuery(document).ready(function() {
 	//Scroll a las diferentes secciones la web
 	//las restas en píxeles son un pequeño ajuste para que el sticky header no tape parte de la sección
 
+
+	$("#lanza-menu").click(function() {
+
+		var menu = $(".menu-full-mobile").hasClass("oculto");
+
+		if (menu) {
+			$( ".menu-full-mobile" ).slideToggle("1000");
+			$(".menu-full-mobile").removeClass("oculto");
+			
+
+		}else {
+			$( ".menu-full-mobile" ).slideToggle("1000");
+			$(".menu-full-mobile").addClass("oculto");
+		}
+	});
+
+
 	$(".menu-link a ").click(function() {
+
+		var menu = $(".menu-full-mobile").hasClass("oculto");
+
+		if (menu) {
+
+			
+
+		}else {
+			$( ".menu-full-mobile" ).slideToggle("1000");
+			$(".menu-full-mobile").addClass("oculto");
+		}
 
 		var href = $(this).attr('href');
 
