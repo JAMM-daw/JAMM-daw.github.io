@@ -143,6 +143,37 @@ h1, h2, h3, h4, h5, h6, p, a {
   background-color: white;
 }
 
+.mobile.menu.top .col-10 {
+  text-align: right;
+}
+
+.mobile.menu.top .contenedor-qr {
+  max-width: 30px;
+  margin-top: 22px;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.mobile.menu.top .contenedor-menu {
+  max-width: 30px;
+  margin-top: 22px;
+  display: inline-block;
+  margin-right: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.mobile.menu.top .contenedor-menu img,
+.mobile.menu.top .contenedor-qr img {
+  max-width: 100%;
+}
+
+.mobile.menu.top .contenedor-menu:hover img,
+.mobile.menu.top .contenedor-qr:hover img {
+  opacity: 0.7;
+}
 
 /* CONTENEDOR PRINCIPAL */
 

@@ -1,0 +1,104 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.6/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        AFRAME.registerComponent('vidhandler', {
+            init: function() {
+                this.toggle = false;
+                this.videoNodes = document.querySelectorAll("video");
+                this.videoNodes.pause();
+            },
+            tick: function() {
+                if (this.el.object3D.visible == true) {
+                    if (!this.toggle) {
+                        this.toggle = true;
+                        for (let i = 0; i < this.videoNodes.length; i++) {
+                this.videoNodes[i].play();
+            }
+                    }
+                } else {
+                    for (let i = 0; i < this.videoNodes.length; i++) {
+            this.videoNodes[i].pause();
+                }
+                this.toggle = false;
+            }
+        });
+
+        function refrespage() {
+            location.reload();
+        }
+
+        function playvid() {
+            videoNodes.play();
+        }
+    </script>
+    <!-- IF YOU WANT TO PLAY ALPHA VIDEO THEN IT SHOULD BE IN WEBM FORMAT ........ 
+    FOR NORMAL VIDEO - MP4 or OGG -->
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+<!-- <video id="video" autoplay loop crossOrigin="anonymous" webkit-playsinline>
+    <source src="/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+    <source src="/sintel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+
+<video id="video-src" autoplay="true" muted src="short_video2.webm"></video> -->
+
+    <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 60; canvasWidth: 200; canvasHeight: 200'>
+        <a-assets>
+            <video preload="auto" id="men" poster="ANY IMAGE PATH (THUMBNAIL)" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
+                <source src="./videos/1.Men.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
+            </video>
+        </a-assets>
+
+        <a-assets>
+            <video preload="auto" id="kote" poster="ANY IMAGE PATH (THUMBNAIL)" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
+                <source src="./videos/2.Kote.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <img src="ANY IMAGE PATH (THUMBNAIL)"> Your browser does not support Or Else Please Click Reset Button.
+            </video>
+        </a-assets>
+
+        <a-marker preset="hiro" vidhandler>
+            <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:false;src:#men' controls></a-plane>
+        </a-marker>
+        <a-entity camera></a-entity>
+
+        
+        <a-marker preset="kanji" vidhandler>
+            <a-plane position='0 0.1 0' rotation="-90 0 0" material='transparent:false;src:#kote' controls></a-plane>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left">
+                <div class="onebleft">
+                    <button onclick="vid.playvid()" class="btn btnskips">Play (CHROME)</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
+                <div class="onebright">
+                    <button onclick="refrespage()" class="btn btnskips">Refresh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
