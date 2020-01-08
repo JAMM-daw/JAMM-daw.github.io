@@ -5,41 +5,58 @@
     $('#ajax-form').submit(function(e){
  
         e.preventDefault();
- 
+
         $("#error").hide();
+        $("#error-nombre").hide();
+        $("#error-email").hide();
+        $("#mail-invalido").hide()
+        $("#error-mensaje").hide();
+        $("#error-checkout").hide();
  
+        var errores;
         var name = $("input#nombre").val();
-        if(name == ""){
-            $("#error").fadeIn()
-            $("input#nombre").focus();
-            return false;
-        }
- 
-
         var email = $("input#email").val();
-        if(email == ""){
-            $("#error").fadeIn()
-            $("input#email").focus();
-            return false;
-        }
- 
-
+        var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
         var mensaje = $("input#mensaje").val();
-        if(mensaje == ""){
-            $("#error").fadeIn()
-            $("input#mensaje").focus();
-            return false;
-        }
-
         var checkbox1 = $("input#checkbox1").val();
-        if( $("input#checkbox1").prop("checked") == false) {
-
-            $("#error").fadeIn()
-            $("input#checkbox1").focus();
-            return false;
+        //var checkbox2 = $("input#checkbox2").val();
+    
+     
+        if(name == ""){
+            $("#error-nombre").fadeIn()
+            $("input#nombre").focus();
+            errores = true;
         }
 
-        var checkbox2 = $("input#checkbox2").val();
+        if(email == ""){
+            $("#error-email").fadeIn()
+            $("input#nombre").focus();
+            errores = true;
+        }
+    
+        if( !email_regex.test(email) ){
+            $("#mail-invalido").fadeIn()
+            $("input#email").focus();
+            errores = true;
+        }
+
+        if(mensaje == ""){
+            $("#error-mensaje").fadeIn()
+            $("input#mensaje").focus();
+            errores = true;
+        }
+
+        if( $("input#checkbox1").prop("checked") == false) {
+            $("#error-checkbox").fadeIn()
+            $("input#checkbox1").focus();
+            errores = true;
+        }
+     
+        if(errores) {
+            $("#error").fadeIn()
+            return false;
+         
+        }
  
         // ajax
         $.ajax({
