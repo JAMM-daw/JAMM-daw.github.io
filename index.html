@@ -561,17 +561,21 @@
 	                    <div class="col-12 col-sm-6">
 	                        <div class="caja-formulario nombre">
 	                            <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="Nombre*">
-	                        </div>
+	                        	<span id="error-nombre" class="campos-ocultos">El nombre es obligatorio</span>
+				    </div>
 	                    </div>
 	                    <div class="col-12 col-sm-6">
 	                        <div class="caja-formulario email">
 	                            <input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
-	                        </div>
+	                        	<span id="mail-invalido" class="campos-ocultos">La dirección no es correcta</span>
+				    	<span id="error-email" class="campos-ocultos">El e-mail es obligatorio</span>
+				    </div>
 	                    </div>
 	                    <div class="col-12">
 	                        <div class="caja-formulario mensaje">
 	                            <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="Mensaje*">                               
-	                        </div>
+	                        	<span id="error-mensaje" class="campos-ocultos">El mensaje es obligatorio</span>
+				    </div>
 	                    </div>
                         <div class="col-12">
                             <div class="caja-formulario check-privacy">
@@ -583,7 +587,8 @@
 	                        <div class="caja-formulario check-privacy">
 	                            <input type="checkbox" id="checkbox2" name="checkbox2" value="1" aria-invalid="false" aria-required="true">
 	                            <a>Por favor, marca esta casilla si quieres recibir nuestra newsletter.</a>
-	                        </div>
+	                        	<span id="error-checkbox" class="campos-ocultos">Debes aceptar los términos y condiciones</span>
+				    </div>
 	                    </div>
 	                    <div class="col-12">
 	                        <div class="caja-formulario-boton">
