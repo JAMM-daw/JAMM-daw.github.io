@@ -6,40 +6,48 @@
  
         e.preventDefault();
  
-        $("#error").hide();
- 
+        var errores;
         var name = $("input#nombre").val();
-        if(name == ""){
-            $("#error").fadeIn()
-            $("input#nombre").focus();
-            return false;
-        }
- 
-
         var email = $("input#email").val();
-        if(email == ""){
-            $("#error").fadeIn()
-            $("input#email").focus();
-            return false;
+        var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+        var mensaje = $("input#mensaje").val();
+        var checkbox1 = $("input#checkbox1").val();
+        //var checkbox2 = $("input#checkbox2").val();
+    
+     
+        if(name == ""){
+            $("#error-nombre").fadeIn()
+            $("input#nombre").focus();
+            errores = true;
         }
  
 
-        var mensaje = $("input#mensaje").val();
+        
+   
+        if( !email_regex.test(email) ){
+            $("#error-email").fadeIn()
+            $("input#email").focus();
+            errores = true;
+        }
+ 
+
+        
         if(mensaje == ""){
-            $("#error").fadeIn()
+            $("#error-mensaje").fadeIn()
             $("input#mensaje").focus();
-            return false;
+            errores = true;
         }
 
-        var checkbox1 = $("input#checkbox1").val();
+        
         if( $("input#checkbox1").prop("checked") == false) {
-
-            $("#error").fadeIn()
+            $("#error-checkbox").fadeIn()
             $("input#checkbox1").focus();
+            errores = true;
+        }
+     
+        if(errores) {
             return false;
         }
-
-        var checkbox2 = $("input#checkbox2").val();
  
         // ajax
         $.ajax({
