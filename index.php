@@ -1,5 +1,33 @@
+<?php 
+session_start();
+
+
+
+if ( isset($_GET['la']) ){
+    $_SESSION['la'] = $_GET['la'];
+    header('Location:'.$_SERVER['PHP_SELF']);
+    exit();
+}
+switch($_SESSION['la']){
+    case "es":
+        require('locale/es.php');        
+    break;
+    case "en":
+        require('locale/en.php');        
+    break;
+    case "fr":
+        require('locale/fr.php');        
+    break;
+    default: 
+        require('locale/es.php');        
+    }
+?>
+
+
 <!DOCTYPE html>
 <html>
+
+
 
 <head>
     <!--Codificación del sitio-->
@@ -54,8 +82,8 @@
             </div>
             <div class="col-10">
                 <ul class="lang-menu">
-                    <li id="menu-es" class="lang-link"><a href="#">ES</a></li>
-                    <li id="menu-en" class="lang-link"><a href="">EN</a></li>
+                    <li id="menu-es" class="lang-link"><a href="index.php?la=es">ES</a></li>
+                    <li id="menu-en" class="lang-link"><a href="index.php?la=en">EN</a></li>
                     <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
                 </ul>
                 <ul class="menu">
