@@ -553,45 +553,44 @@
                 </div>
 
 
-                <form action="/#contacto-es" method="post" class="form-contacto form-contacto-es" novalidate="novalidate">
+                <form action="javascript:void(0)" method="post" id="ajax-form" class="form-contacto form-contacto-es" novalidate="novalidate">
                     <div class="campos-ocultos">
-
                         <input type="hidden" name="idioma" value="es">
                     </div>
                     <div class="row estructura-formulario">
 	                    <div class="col-12 col-sm-6">
 	                        <div class="caja-formulario nombre">
-	                            <input type="text" name="nombre" value="" class="input input-texto obligatorio" aria-required="true" aria-invalid="false" placeholder="Nombre*">
+	                            <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="Nombre*">
 	                        </div>
 	                    </div>
 	                    <div class="col-12 col-sm-6">
 	                        <div class="caja-formulario email">
-	                            <input type="email" name="email" value="" class="input input-texto obligatorio" aria-required="true" aria-invalid="false" placeholder="E-mail*">
+	                            <input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
 	                        </div>
 	                    </div>
 	                    <div class="col-12">
 	                        <div class="caja-formulario mensaje">
-	                            <input type="textarea" name="mensaje" value="" class="input input-texto obligatorio" aria-invalid="false" placeholder="Mensaje*">
+	                            <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="Mensaje*">                               
 	                        </div>
 	                    </div>
+                        <div class="col-12">
+                            <div class="caja-formulario check-privacy">
+                                <input type="checkbox" id="checkbox1" name="checkbox1" value="1" aria-invalid="false" aria-required="true">
+                                <a>Por favor, marca esta casilla para aceptar las <a href="" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
+                            </div>
+                        </div>
 	                    <div class="col-12">
 	                        <div class="caja-formulario check-privacy">
-	                            <input type="checkbox" name="condiciones-1" value="1" aria-invalid="false">
+	                            <input type="checkbox" id="checkbox2" name="checkbox2" value="1" aria-invalid="false" aria-required="true">
 	                            <a>Por favor, marca esta casilla si quieres recibir nuestra newsletter.</a>
 	                        </div>
 	                    </div>
 	                    <div class="col-12">
-	                        <div class="caja-formulario check-privacy">
-	                            <input type="checkbox" name="condiciones-2" value="1" aria-invalid="false">
-	                            <a>Por favor, marca esta casilla para aceptar las <a href="" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
-	                        </div>
-	                    </div>
-	                    <div class="col-12">
 	                        <div class="caja-formulario-boton">
-	                            <input type="submit" value="Enviar" class="input-submit obligatorio" disabled="">
-	                            <div class="ajax-loader"></div>
+	                            <input type="submit" value="Enviar" class="input-submit obligatorio">
+	                            <p id="error" class="campos-ocultos">Faltan campos obligatorios(*) por rellenar</p>
+                                <p id="mensaje-exito" class="campos-ocultos">Hemos recibido tu mensaje. Gracias por contactarnos.</p>
 	                        </div>
-	                        <div class="caja-respuestas campos-ocultos"></div>
 	                    </div>
 	                </div>
                 </form>
@@ -635,7 +634,7 @@
             </div>
         </div>
     </footer>
-
+<script type="text/javascript" src="./js/form.js"> </script>
 </body>
 
 </html>
