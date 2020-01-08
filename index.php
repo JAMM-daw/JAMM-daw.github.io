@@ -1,14 +1,13 @@
 <?php 
 session_start();
 
-
-
-if ( isset($_GET['la']) ){
-    $_SESSION['la'] = $_GET['la'];
+if ( isset($_GET['lang']) ){
+    $_SESSION['lang'] = $_GET['lang'];
     header('Location:'.$_SERVER['PHP_SELF']);
     exit();
 }
-switch($_SESSION['la']){
+
+switch($_SESSION['lang']){
     case "es":
         require('locale/es.php');        
     break;
@@ -82,9 +81,9 @@ switch($_SESSION['la']){
             </div>
             <div class="col-10">
                 <ul class="lang-menu">
-                    <li id="menu-es" class="lang-link"><a href="index.php?la=es">ES</a></li>
-                    <li id="menu-en" class="lang-link"><a href="index.php?la=en">EN</a></li>
-                    <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
+                    <li id="menu-es" class="lang-link"><a href="index.php?lang=es">ES</a></li>
+                    <li id="menu-en" class="lang-link"><a href="index.php?lang=en">EN</a></li>
+                    <li id="menu-fr" class="lang-link"><a href="index.php?lang=fr">FR</a></li>
                 </ul>
                 <ul class="menu">
                     <li id="menu-01" class="menu-link"><a href="#el-kendo">El Kendo</a></li>
@@ -589,23 +588,28 @@ switch($_SESSION['la']){
 	                    <div class="col-12 col-sm-6">
 	                        <div class="caja-formulario nombre">
 	                            <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="Nombre*">
-	                        </div>
+	                        	<span id="error-nombre" class="campos-ocultos">El nombre es obligatorio</span>
+				</div>
 	                    </div>
 	                    <div class="col-12 col-sm-6">
 	                        <div class="caja-formulario email">
-	                            <input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
-	                        </div>
+	                            
+				<input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
+	                        <span id="error-email" class="campos-ocultos">El e-mail es obligatorio</span>
+				    </div>
 	                    </div>
 	                    <div class="col-12">
 	                        <div class="caja-formulario mensaje">
 	                            <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="Mensaje*">                               
-	                        </div>
+	                        	<span id="error-mensaje" class="campos-ocultos">El mensaje es obligatorio</span>
+				    </div>
 	                    </div>
                         <div class="col-12">
                             <div class="caja-formulario check-privacy">
                                 <input type="checkbox" id="checkbox1" name="checkbox1" value="1" aria-invalid="false" aria-required="true">
-                                <a>Por favor, marca esta casilla para aceptar las <a href="" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
-                            </div>
+                                
+				    <a>Por favor, marca esta casilla para aceptar las <a href="" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
+                            <span id="error-checkbox" class="campos-ocultos">Debes aceptar los términos y condiciones</span>
                         </div>
 	                    <div class="col-12">
 	                        <div class="caja-formulario check-privacy">
