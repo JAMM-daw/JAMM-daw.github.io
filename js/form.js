@@ -20,25 +20,19 @@
             $("input#nombre").focus();
             errores = true;
         }
- 
-
-        
-   
+    
         if( !email_regex.test(email) ){
             $("#error-email").fadeIn()
             $("input#email").focus();
             errores = true;
         }
- 
 
-        
         if(mensaje == ""){
             $("#error-mensaje").fadeIn()
             $("input#mensaje").focus();
             errores = true;
         }
 
-        
         if( $("input#checkbox1").prop("checked") == false) {
             $("#error-checkbox").fadeIn()
             $("input#checkbox1").focus();
