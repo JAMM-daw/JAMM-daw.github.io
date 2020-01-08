@@ -5,6 +5,13 @@
     $('#ajax-form').submit(function(e){
  
         e.preventDefault();
+
+        $("#error").hide();
+        $("#error-nombre").hide();
+        $("#error-email").hide();
+        $("#mail-invalido").hide()
+        $("#error-mensaje").hide();
+        $("#error-checkout").hide();
  
         var errores;
         var name = $("input#nombre").val();
@@ -20,9 +27,15 @@
             $("input#nombre").focus();
             errores = true;
         }
+
+        if(email == ""){
+            $("#error-email").fadeIn()
+            $("input#nombre").focus();
+            errores = true;
+        }
     
         if( !email_regex.test(email) ){
-            $("#error-email").fadeIn()
+            $("#mail-invalido").fadeIn()
             $("input#email").focus();
             errores = true;
         }

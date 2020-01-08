@@ -596,6 +596,7 @@ switch($_SESSION['lang']){
 	                            
 				<input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
 	                        <span id="error-email" class="campos-ocultos">El e-mail es obligatorio</span>
+                            <span id="mail-invalido" class="campos-ocultos">La dirección no es correcta</span>
 				    </div>
 	                    </div>
 	                    <div class="col-12">
