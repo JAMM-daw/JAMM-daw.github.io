@@ -40,7 +40,9 @@
         }
      
         if(errores) {
+            $("#error").fadeIn()
             return false;
+         
         }
  
         // ajax
