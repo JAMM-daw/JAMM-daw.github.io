@@ -1,11 +1,18 @@
 <?php 
 session_start();
 
+
+
 if ( isset($_GET['lang']) ){
     $_SESSION['lang'] = $_GET['lang'];
     header('Location:'.$_SERVER['PHP_SELF']);
     exit();
 }
+else {
+    $_SESSION['lang'] ="es";
+}
+
+
 
 switch($_SESSION['lang']){
     case "es":
@@ -22,7 +29,6 @@ switch($_SESSION['lang']){
     }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 
@@ -31,13 +37,13 @@ switch($_SESSION['lang']){
 <head>
     <!--Codificación del sitio-->
     <meta charset="UTF-8">
-    <html lang="es">
+    <html lang="<?php echo $codigoIdioma ?>">
 
     <!--SEO TAGS-->
-    <title>KI KEN TAI - El primer juego de cartas de Kendo</title>
-    <meta name="keywords" content="ki ken tai, kendo, juego de cartas">
+    <title><?php echo $title ?></title>
+    <meta name="keywords" content="<?php echo $keywords ?>">
     <meta name="author" content="José Ángel Maestre, Circle Of Creators">
-    <meta name="description" content="KI KEN TAI es el primer juego de cartas de Kendo">
+    <meta name="description" content="<?php echo $description ?>">
     <!-- SITIO INVISIBLE HASTA PUESTA ONLINE -->
     <meta name="robots" content="noindex, nofollow">
     <link href="URL" rel="canonical">
@@ -119,7 +125,7 @@ switch($_SESSION['lang']){
         </div>
     </header>
     <header id="menu-03" class="mobile menu top">
-		<div class="row">
+        <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
                     <a href="#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
@@ -134,7 +140,7 @@ switch($_SESSION['lang']){
                 </div>
             </div>
         </div>
-	</header>
+    </header>
 <header id="menu-04" class="mobile menu top sticky">
         <div class="row">
             <div class="col-2">
@@ -178,12 +184,12 @@ switch($_SESSION['lang']){
         <!-- Slider de imágenes -->
 
         <section class="slider">
-        	<div class="row">
-        		<div class="col-12 col-lg-10">
-        			<h1>KI KEN TAI</h1>
-        			<p>El primer juego de cartas de Kendo</p>
-        		</div>
-        		<div class="col-12">
+            <div class="row">
+                <div class="col-12 col-lg-10">
+                    <h1>KI KEN TAI</h1>
+                    <h2>El primer juego de cartas de Kendo</h2>
+                </div>
+                <div class="col-12">
                     <div class="contenedor-boton centro">
                         <div class="boton portada-1">
                             <a>Ver una demostración</a>
@@ -195,18 +201,18 @@ switch($_SESSION['lang']){
                         </div>
                     </div>
                 </div>
-        	</div>
-	        <div class="capa-slider"></div>
-		        <ul class="rslides">
-		                    <li><img src="./images/slides/imagen-0.jpg"></li>
-		                    <li><img src="./images/slides/imagen-1.jpg"></li>
-		                    <li><img src="./images/slides/imagen-2.jpg"></li>
-		                    <li><img src="./images/slides/imagen-3.jpg"></li>
-				</ul>
-			<img class="cartas-portada" src="./images/cartas-kikentai-portada.png">
-			<div class="solapa inferior blanco"></div>
-			
-		</section>
+            </div>
+            <div class="capa-slider"></div>
+                <ul class="rslides">
+                            <li><img src="./images/slides/imagen-0.jpg"></li>
+                            <li><img src="./images/slides/imagen-1.jpg"></li>
+                            <li><img src="./images/slides/imagen-2.jpg"></li>
+                            <li><img src="./images/slides/imagen-3.jpg"></li>
+                </ul>
+            <img class="cartas-portada" src="./images/cartas-kikentai-portada.png">
+            <div class="solapa inferior blanco"></div>
+            
+        </section>
 
         <!-- Información sobre el Kendo visible -->
 
@@ -215,7 +221,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
-                        <h2 class="subtitulo">¿Qué es el Kendo?</h2>
+                        <h3 class="subtitulo">¿Qué es el Kendo?</h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -232,20 +238,20 @@ switch($_SESSION['lang']){
 
         <section class="kendo video">
             <div class="solapa superior blanco"></div>
-	            <div class="caja-video">
-	            	<div class="row">
-		        		<div class="col-12">
-		                    <div class="contenedor-boton centro inicio">
-		                        <div id="kendo" class="boton boton-desplegar">
-		                            <a>Quiero saber más</a>
-		                            <div class="fondo-boton"></div>
-		                        </div>
-		                    </div>
-		                </div>
-	        		</div>
-	                <!-- <img src="./images/practicar-kendo.jpg"> -->
-	                <iframe id="yt-frame" width="100%" height="850px" src="https://www.youtube.com/embed/LHNPoSBJvn8?autoplay=1&mute=1&enablejsapi=1"> </iframe>
-	            </div>
+                <div class="caja-video">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contenedor-boton centro inicio">
+                                <div id="kendo" class="boton boton-desplegar">
+                                    <a>Quiero saber más</a>
+                                    <div class="fondo-boton"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <img src="./images/practicar-kendo.jpg"> -->
+                    <iframe id="yt-frame" width="100%" height="850px" src="https://www.youtube.com/embed/LHNPoSBJvn8?autoplay=1&mute=1&enablejsapi=1"> </iframe>
+                </div>
 
             <div class="solapa inferior blanco oculto"></div>
             <div class="solapa superior textura"></div>
@@ -257,8 +263,8 @@ switch($_SESSION['lang']){
         <section id="kendo-saber-mas" class="kendo saber-mas oculto ">
 
             <div class="row">
-                <div class="col-lg-6 col-12">
-                	<div class="contenedor-texto">
+                <div class="col-md-6 col-12">
+                    <div class="contenedor-texto">
                         <p>
                             Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
                             non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
@@ -301,7 +307,7 @@ switch($_SESSION['lang']){
                     </div>
                 </div>
                 <div class="col-12">
-                	<div class="contenedor-boton centro">
+                    <div class="contenedor-boton centro">
                         <div id ="iaido-1" class="boton boton-desplegar">
                             <a>¿Qué es el Iaido?</a>
                             <div class="fondo-boton"></div>
@@ -321,7 +327,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
-                        <h2 class="subtitulo">¿Qué es el Iaido?</h2>
+                        <h3 class="subtitulo">¿Qué es el Iaido?</h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -340,16 +346,16 @@ switch($_SESSION['lang']){
             <div class="solapa superior blanco"></div>
 
             <div class="caja-video">
-            	<div class="row">
-		        		<div class="col-12">
-		                    <div class="contenedor-boton centro inicio">
-		                        <div id="iaido-2" class="boton boton-desplegar">
-		                            <a>Quiero saber más</a>
-		                            <div class="fondo-boton"></div>
-		                        </div>
-		                    </div>
-		                </div>
-	        		</div>
+                <div class="row">
+                        <div class="col-12">
+                            <div class="contenedor-boton centro inicio">
+                                <div id="iaido-2" class="boton boton-desplegar">
+                                    <a>Quiero saber más</a>
+                                    <div class="fondo-boton"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <img src="./images/iaido_general_01.jpg">
             </div>
 
@@ -361,7 +367,7 @@ switch($_SESSION['lang']){
         <section class="iaido iaido-2 saber-mas oculto">
 
             <div class="row">
-                <div class="col-lg-6 col-12">
+                <div class="col-md-6 col-12">
                     <div class="contenedor-texto">
                         <p>
                             Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
@@ -434,7 +440,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div class="contenedor-titulo">
                         <img src="./images/kendo-enso-negativo.png">
-                        <h2 class="subtitulo">¿Qué es Ki Ken Tai?</h2>
+                        <h3 class="subtitulo">¿Qué es Ki Ken Tai?</h3>
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -486,7 +492,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
-                        <h2 class="subtitulo">¿Dónde entrenar Kendo?</h2>
+                        <h3 class="subtitulo">¿Dónde entrenar Kendo?</h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -517,15 +523,15 @@ switch($_SESSION['lang']){
 
         
         <section class="listado">
-        	<div class="row">
-        		<div class="col-12">
-		            <div class="contenedor-boton centro inicio">
-		                <div id="listado-de-dojos" class="boton boton-desplegar">
-		                    <a>Listado de Dojos</a>
-		                    <div class="fondo-boton"></div>
-		                </div>
-		            </div>
-		        </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contenedor-boton centro inicio">
+                        <div id="listado-de-dojos" class="boton boton-desplegar">
+                            <a>Listado de Dojos</a>
+                            <div class="fondo-boton"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -565,10 +571,10 @@ switch($_SESSION['lang']){
         <!-- Formulario de contacto -->
         <section id="contacto" class="formulario">
             <div class="row">
-            	<div class="col-12">
+                <div class="col-12">
                     <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-negativo.png">
-                        <h2 class="subtitulo">Contacto</h2>
+                        <h3 class="subtitulo">Contacto</h3>
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -581,51 +587,48 @@ switch($_SESSION['lang']){
 
 
                 <form action="javascript:void(0)" method="post" id="ajax-form" class="form-contacto form-contacto-es" novalidate="novalidate">
-                    <div class="campos-ocultos">
-                        <input type="hidden" name="idioma" value="es">
-                    </div>
                     <div class="row estructura-formulario">
-	                    <div class="col-12 col-sm-6">
-	                        <div class="caja-formulario nombre">
-	                            <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="Nombre*">
-	                        	<span id="error-nombre" class="campos-ocultos">El nombre es obligatorio</span>
-				</div>
-	                    </div>
-	                    <div class="col-12 col-sm-6">
-	                        <div class="caja-formulario email">
-	                            
-				<input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
-	                        <span id="error-email" class="campos-ocultos">El e-mail es obligatorio</span>
+                        <div class="col-12 col-md-6">
+                            <div class="caja-formulario nombre">
+                                <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="Nombre*">
+                                <span id="error-nombre" class="campos-ocultos">El nombre es obligatorio</span>
+                </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="caja-formulario email">
+                                
+                <input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
+                            <span id="error-email" class="campos-ocultos">El e-mail es obligatorio</span>
                             <span id="mail-invalido" class="campos-ocultos">La dirección no es correcta</span>
-				    </div>
-	                    </div>
-	                    <div class="col-12">
-	                        <div class="caja-formulario mensaje">
-	                            <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="Mensaje*">                               
-	                        	<span id="error-mensaje" class="campos-ocultos">El mensaje es obligatorio</span>
-				    </div>
-	                    </div>
+                    </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="caja-formulario mensaje">
+                                <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="Mensaje*">                               
+                                <span id="error-mensaje" class="campos-ocultos">El mensaje es obligatorio</span>
+                    </div>
+                        </div>
                         <div class="col-12">
                             <div class="caja-formulario check-privacy">
                                 <input type="checkbox" id="checkbox1" name="checkbox1" value="1" aria-invalid="false" aria-required="true">
                                 
-				    <a>Por favor, marca esta casilla para aceptar las <a href="" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
+                    <a>Por favor, marca esta casilla para aceptar las <a href="privacidad.html" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
                             <span id="error-checkbox" class="campos-ocultos">Debes aceptar los términos y condiciones</span>
                         </div>
-	                    <div class="col-12">
-	                        <div class="caja-formulario check-privacy">
-	                            <input type="checkbox" id="checkbox2" name="checkbox2" value="1" aria-invalid="false" aria-required="true">
-	                            <a>Por favor, marca esta casilla si quieres recibir nuestra newsletter.</a>
-	                        </div>
-	                    </div>
-	                    <div class="col-12">
-	                        <div class="caja-formulario-boton">
-	                            <input type="submit" value="Enviar" class="input-submit obligatorio">
-	                            <p id="error" class="campos-ocultos">Faltan campos obligatorios(*) por rellenar</p>
+                        <div class="col-12">
+                            <div class="caja-formulario check-privacy">
+                                <input type="checkbox" id="checkbox2" name="checkbox2" value="1" aria-invalid="false" aria-required="true">
+                                <a>Por favor, marca esta casilla si quieres recibir nuestra newsletter.</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="caja-formulario-boton">
+                                <input type="submit" value="Enviar" class="input-submit obligatorio">
+                                <p id="error" class="campos-ocultos">Faltan campos obligatorios(*) por rellenar</p>
                                 <p id="mensaje-exito" class="campos-ocultos">Hemos recibido tu mensaje. Gracias por contactarnos.</p>
-	                        </div>
-	                    </div>
-	                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
@@ -646,18 +649,18 @@ switch($_SESSION['lang']){
                     </div>
                 </div>
                 <div class="row iconos-redes">
-                    <div class="col-sm-6">
+                    <div class="col-6">
                         <div class="caja-icono izq">
-                            <a href="https://facebook.com/">
-									<img src="./images/facebook.png">
-								</a>
+                            <a href="https://facebook.com/circle-of-creators">
+                                    <img src="./images/facebook.png">
+                                </a>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-6">
                         <div class="caja-icono der">
-                            <a href="mailto:">
-									<img src="./images/email.png">
-								</a>
+                            <a href="mailto:circle-of-creators@mail.com">
+                                    <img src="./images/email.png">
+                                </a>
                         </div>
                     </div>
                 </div>
@@ -671,3 +674,4 @@ switch($_SESSION['lang']){
 </body>
 
 </html>
+

@@ -4,6 +4,14 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Georgia';
 }
 
+a {
+  color: red;
+}
+
+a:hover {
+  color: white;
+}
+
 
 /* HEADER MENU */
 
@@ -131,6 +139,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /*MOBILE MENU*/
 
+#menu-03 {
+  display: none;
+}
+
 .mobile.menu.top {
   position: relative;
   width: 100%;
@@ -139,6 +151,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   top: 0;
   z-index: 200;
   background-color: white;
+
 }
 
 .mobile.menu.top .col-10 {
@@ -184,6 +197,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   top: 0;
   z-index: 200;
   background-color: white;
+
 }
 
 .menu-full-mobile {
@@ -261,7 +275,7 @@ section .row {
   text-shadow: 1px 1px #0006;
 }
 
-.slider .row p {
+.slider .row h2 {
   color: white;
   font-size: 2em;
   font-style: italic;
@@ -840,6 +854,10 @@ section .botonera .contenedor-boton .boton {
   width: 100%;
 }
 
+.form-contacto span {
+  color: red;
+}
+
 
 /*FOOTER*/
 
@@ -868,10 +886,12 @@ footer .logo-footer img {
 
 footer .caja-icono.der {
   text-align: left;
+  padding-left: 2px;
 }
 
 footer .caja-icono.izq {
   text-align: right;
+  padding-right: 2px;
 }
 
 footer .caja-icono.izq img {
@@ -887,7 +907,8 @@ footer .caja-icono.der img {
 .iconos-redes {
   max-width: 200px;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
+  padding-top: 20px;
 }
 
 footer .copyright {
@@ -915,16 +936,20 @@ footer .copyright p {
 
 
   .slider .row {
-    top: 25%;
-  }
+  top: 30%;
+}
 
   .slider .row h1 {
     font-size: 50px;
   }
 
-  .slider .row p {
+  .slider .row h2 {
     font-size: 25px;
   }
+
+  .slider .contenedor-boton {
+  padding-top: 20px;
+}
 
   .boton a {
     font-size: 20px;
@@ -956,9 +981,6 @@ footer .copyright p {
   height: 500px;
 }
 
-  .slider .contenedor-boton {
-    padding-top: 10px;
-  }
   .slider .row {
     padding: 0 12%;
   }
@@ -967,7 +989,11 @@ footer .copyright p {
     text-align: center;
   }
 
-  .slider .row p {
+  .slider .row h2 {
+    text-align: center;
+  }
+
+   .intro  p {
     text-align: center;
   }
 
@@ -981,11 +1007,11 @@ footer .copyright p {
   }
 
   .kendo.saber-mas .contenedor-texto {
-    text-align: center;
+    text-align: left;
   }
 
   .iaido.saber-mas .contenedor-texto {
-    text-align: center;
+    text-align: left;
   }
 
   .kendo.saber-mas .contenedor-texto {
@@ -1045,13 +1071,19 @@ section .botonera .contenedor-boton .boton {
 
 @media all and (max-width: 767px) {
 
-    .desktop {
+
+
+  .desktop {
     display: none;
   }
 
   .mobile {
     display: block;
   }
+
+  .contenedor-principal {
+  margin-top: 70px;
+}
 
   .solapa.inferior.blanco {
   max-height: 60px;
@@ -1068,6 +1100,28 @@ section .botonera .contenedor-boton .boton {
   .desktop.menu.sticky {
     display: none !important;
   }
+
+  .kendo.saber-mas .contenedor-texto {
+    text-align: center;
+  }
+
+  .iaido.saber-mas .contenedor-texto {
+    text-align: center;
+  }
+
+section .botonera .contenedor-boton .boton {
+  display: block;
+  width: 100%;
+}
+
+
+  .form-contacto .caja-formulario.nombre {
+  padding-right: 0;
+}
+
+.form-contacto .caja-formulario.email {
+  padding-left: 0;
+}
 
 }
 
@@ -1087,13 +1141,44 @@ section .botonera .contenedor-boton .boton {
 }
 
 .solapa.superior.textura {
-  max-height: 37px;
+  background-size: cover;
 }
 
 .solapa.inferior.azul {
   max-height: 44px;
 }
 
+.slider .row h1 {
+  font-size: 45px;
+}
+
+.slider .row h2 {
+  font-size: 18px;
+}
+
+.slider .contenedor-boton {
+  padding-top: 30px;
+}
+
+.boton a {
+  font-size: 18px;
+}
+
+.contenedor-titulo img {
+  max-width: 100%;
+}
+
+.mapa.intro .contenedor-titulo .subtitulo {
+  font-size: 26px;
+}
+
+.juego.intro .contenedor-titulo .subtitulo {
+  font-size: 35px;
+}
+
+footer .copyright p {
+  padding: 0 30px;
+}
 }
 
 
