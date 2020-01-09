@@ -1,33 +1,34 @@
 <?php  
 
-//DICCIONARIO ESPAÑOL
+//DICCIONARIO INGLÉS
 
 
 //HEAD
 
 
-$codigoIdioma ="es-ES";
+$codigoIdioma ="en-UK";
 
-$keywords = "ki ken tai, kendo, juego de cartas";
+$keywords = "ki ken tai, kendo, cards game";
 
 $title ="KI KEN TAI - The first cards game about Kendo";
 
-$description ="KI KEN TAI es el primer juego de cartas de Kendo";
+$description ="KI KEN TAI is the first cards game about Kendo";
 
-$canonical ="";
+$canonical = "";
 
 //ALTS
 
-$altLogo ="logo del juego de cartas de kendo ki ken tai";
+$altLogo ="ki ken tai logo";
 
 
 
 //MENU
-$elKendo = "El Kendo";
-$elJuego = "El juego";
-$laDemo = "La demo";
+
+$elKendo = "Kendo";
+$elJuego = "The game";
+$laDemo = "Demo";
 $dojos = "Dojos";
-$contacto ="Contacto";
+$contacto ="Contact";
 
 
 //TITULOS
@@ -35,30 +36,58 @@ $contacto ="Contacto";
 
 //SLIDER
 
-$sliderTitulo ="<h2>The first cards game about Kendo</h2>";
+$sliderTitulo ="The first cards game about Kendo";
 
 
 
 //BOTONES
 
-$sliderBoton ="<a>Ver una demostración</a>";
-$sliderBoton2 ="<a>¡Espera!<br>¿Pero qué es el Kendo?</a>";
-$sabermasBoton ="<a>Quiero saber más</a>";
-$iaidoBoton ="<a>¿Qué es el Iaido?</a>";
-$juegoMasInfoBoton ="<a href='#tabs-1'>Más información</a>"; 
-$descargaBoton ="<a href='#tabs-2'>Material de descarga</a>";
-$demoBoton ="<a href='#tabs-3'>Demostración</a>";
-$listadoBoton ="a>Listado de Dojos</a>";
+$sliderBoton ="Watch a demo";
+$sliderBoton2 ="Wait!<br>What is Kendo?";
+$sabermasBoton ="Know more";
+$iaidoBoton ="What is Iaido?";
+$juegoMasInfoBoton ="More Info"; 
+$descargaBoton ="Download Content";
+$demoBoton ="Demo";
+$listadoBoton ="Dojo List";
+$botonSubmit ="Submit";
 
 
 
 //SUBTITULOS
 
-$queEsKendo ="<h3 class='subtitulo'>¿Qué es el Kendo?</h3>";
-$queEsIaido ="<h3 class='subtitulo'>¿Qué es el Iaido?</h3>";
-$queEsKikentai ="<h3 class='subtitulo'>¿Qué es Ki Ken Tai?</h3>";
-$dondeEntreno ="<h3 class='subtitulo'>¿Dónde Kendo?</h3>";
-$queContacto ="<h3 class='subtitulo'>Contacto</h3>";
+$queEsKendo ="What is Kendo?";
+$queEsIaido ="What is Iaido?";
+$queEsKikentai ="What is Ki Ken Tai?";
+$dondeEntreno ="Training Places";
+$queContacto ="Contact";
+
+
+//FORMULARIO
+
+$placeholderNombre ="Name*";
+$placeholderEmail ="E-mail*";
+$placeholderMensaje ="Message*";
+
+$errorNombre ="Name is required";
+$errorEmail ="E-mail is required";
+$errorEmail2 ="E-mail not valid";
+$errorMensaje ="Message is required";
+
+$errorCheckbox ="You must agree to terms and conditions";
+
+$errorGeneral ="Required fields are missing";
+
+$checkbox1 ="Please check this box to accept the <a href='privacidad.html' target='_blank'> conditions of our privacy policy </a>. This web page is protected with reCAPTCHA. You can check the <a href='https://policies.google.com/privacy?hl=en'> Google privacy policy </a> for more information.";
+$checkbox2 ="Please, check this box if you want to receive the newsletter";
+                        
+
+ $mensajeExito ="We received your message. Thank you.";
+
+
+//FOOTER
+
+$footer ="<p> Ki Ken Tai is a trademark of Circle of Creators - Copyright 2020</p>";
 
 
 //TEXTOS
@@ -114,32 +143,4 @@ $juegoIntro ="<p>
                                 Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
                             </p>";  
                     
-                    
-//FORMULARIO
-
-$placeholderNombre ="Nombre*";
-$placeholderEmail ="E-mail*";
-$placeholderMensaje ="Mensaje*";
-
-$errorNombre ="El nombre es obligatorio";
-$errorEmail ="El e-mail es obligatorio";
-$errorEmail2 ="La dirección no es correcta";
-$errorMensaje ="El mensaje es obligatorio";
-
-$errorCheckbox ="Debes aceptar los términos y condiciones";
-
-$errorGeneral ="Faltan campos obligatorios(*) por rellenar";
-
-$checkbox1 ="<a>Por favor, marca esta casilla para aceptar las <a href='privacidad.html' target='_blank'>condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href='https://policies.google.com/privacy?hl=es'>política de privacidad de Google</a> para más información.</a>";
-$checkbox2 ="Por favor, marca esta casilla si quieres recibir nuestra newsletter.";
-                        
-
- $mensajeExito ="Hemos recibido tu mensaje. Gracias por contactarnos.";
-
-
-//FOOTER
-
-$footer ="<p> Ki Ken Tai es una marca registrada de Circle of Creators - Copyright 2020</p>";                                
-
-
 ?>

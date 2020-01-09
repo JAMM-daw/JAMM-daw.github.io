@@ -31,14 +31,17 @@ switch($_SESSION['lang']){
 <html>
 
 <head>
-    <!--Codificación del sitio-->
+	<!--Codificación del sitio-->
+
     <meta charset="UTF-8">
     <html lang=" <?php echo $codigoIdioma ?> ">
+
+    <meta name="author" content="José Ángel Maestre, Circle Of Creators">
 
     <!--SEO TAGS-->
     <title> <?php echo $title ?> </title>
     <meta name="keywords" content="<?php echo $keywords ?>">
-    <meta name="author" content="José Ángel Maestre, Circle Of Creators">
+
     <meta name="description" content="<?php echo $description ?>">
 
     <!-- MODO DESARROLLO - SITIO INVISIBLE PARA ROBOTS HASTA COMIENZO DE CAMPAÑA -->
@@ -71,7 +74,7 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt=" <?php echo $altLogo ?> "></a>
                 </div>
             </div>
             <div class="col-10">
@@ -81,11 +84,11 @@ switch($_SESSION['lang']){
                     <li class="lang-link"><a href="index.php?lang=fr">FR</a></li>
                 </ul>
                 <ul class="menu">
-                    <li class="menu-link"><a href="#el-kendo">El Kendo</a></li>
-                    <li class="menu-link"><a href="#el-juego">El juego</a></li>
-                    <li class="menu-link"><a href="#la-demo">La demo</a></li>
-                    <li class="menu-link"><a href="#dojos">Dojos</a></li>
-                    <li class="menu-link"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-link"><a href="#el-kendo"><?php echo $elKendo ?> </a></li>
+                    <li class="menu-link"><a href="#el-juego"><?php echo $elJuego ?> </a></li>
+                    <li class="menu-link"><a href="#la-demo"><?php echo $laDemo ?> </a></li>
+                    <li class="menu-link"><a href="#dojos"><?php echo $dojos ?> </a></li>
+                    <li class="menu-link"><a href="#contacto"><?php echo $contacto ?> </a></li>
                 </ul>
             </div>
         </div>
@@ -94,21 +97,21 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt=" <?php echo $altLogo ?> " ></a>
                 </div>
             </div>
             <div class="col-10">
                 <ul class="lang-menu">
-                    <li class="lang-link"><a href="#">ES</a></li>
-                    <li class="lang-link"><a href="">EN</a></li>
-                    <li class="lang-link"><a href="">FR</a></li>
+                    <li class="lang-link"><a href="index.php?lang=es">ES</a></li>
+                    <li class="lang-link"><a href="index.php?lang=en">EN</a></li>
+                    <li class="lang-link"><a href="index.php?lang=fr">FR</a></li>
                 </ul>
                 <ul class="menu">
-                    <li class="menu-link"><a href="#el-kendo">El Kendo</a></li>
-                    <li class="menu-link"><a href="#el-juego">El juego</a></li>
-                    <li class="menu-link"><a href="#la-demo">La demo</a></li>
-                    <li class="menu-link"><a href="#dojos">Dojos</a></li>
-                    <li class="menu-link"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-link"><a href="#el-kendo"><?php echo $elKendo ?> </a></li>
+                    <li class="menu-link"><a href="#el-juego"><?php echo $elJuego ?> </a></li>
+                    <li class="menu-link"><a href="#la-demo"><?php echo $laDemo ?> </a></li>
+                    <li class="menu-link"><a href="#dojos"><?php echo $dojos ?> </a></li>
+                    <li class="menu-link"><a href="#contacto"><?php echo $contacto ?> </a></li>
                 </ul>
             </div>
         </div>
@@ -118,7 +121,7 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt=" <?php echo $altLogo ?> "></a>
                 </div>
             </div>
             <div class="col-10">
@@ -140,18 +143,18 @@ switch($_SESSION['lang']){
         <section class="menu-full-mobile oculto">
             <div class="row">
                 <div class="col-12">
-                    <ul class="lang-menu">
-                        <li class="lang-link"><a href="#">ES</a></li>
-                        <li class="lang-link"><a href="">EN</a></li>
-                        <li class="lang-link"><a href="">FR</a></li>
-                    </ul>
-                    <ul class="menu">
-                        <li class="menu-link"><a href="#el-kendo">El Kendo</a></li>
-                        <li class="menu-link"><a href="#el-juego">El juego</a></li>
-                        <li class="menu-link"><a href="#la-demo">La demo</a></li>
-                        <li class="menu-link"><a href="#dojos">Dojos</a></li>
-                        <li class="menu-link"><a href="#contacto">Contacto</a></li>
-                    </ul>
+                 <ul class="lang-menu">
+                    <li class="lang-link"><a href="index.php?lang=es">ES</a></li>
+                    <li class="lang-link"><a href="index.php?lang=en">EN</a></li>
+                    <li class="lang-link"><a href="index.php?lang=fr">FR</a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu-link"><a href="#el-kendo"><?php echo $elKendo ?> </a></li>
+                    <li class="menu-link"><a href="#el-juego"><?php echo $elJuego ?> </a></li>
+                    <li class="menu-link"><a href="#la-demo"><?php echo $laDemo ?> </a></li>
+                    <li class="menu-link"><a href="#dojos"><?php echo $dojos ?> </a></li>
+                    <li class="menu-link"><a href="#contacto"><?php echo $contacto ?> </a></li>
+                </ul>
                 </div>
             </div>
         </section>
@@ -162,16 +165,16 @@ switch($_SESSION['lang']){
             <div class="row">
                 <div class="col-12 col-lg-10">
                     <h1>KI KEN TAI</h1>
-                    <h2>El primer juego de cartas de Kendo</h2>
+                    <h2> <?php echo $sliderTitulo ?> </h2>
                 </div>
                 <div class="col-12">
                     <div class="contenedor-boton centro">
                         <div class="boton portada-1">
-                            <a>Ver una demostración</a>
+                            <a><?php echo $sliderBoton ?></a>
                             <div class="fondo-boton"></div>
                         </div>
                         <div class="boton portada-2">
-                            <a>¡Espera!<br>¿Pero qué es el Kendo?</a>
+                            <a><?php echo $sliderBoton2 ?></a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -196,7 +199,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
-                        <h3 class="subtitulo">¿Qué es el Kendo?</h3>
+                        <h3 class="subtitulo"> <?php echo $queEsKendo ?> </h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -218,7 +221,7 @@ switch($_SESSION['lang']){
                         <div class="col-12">
                             <div class="contenedor-boton centro inicio">
                                 <div id="kendo" class="boton boton-desplegar">
-                                    <a>Quiero saber más</a>
+                                    <a><?php echo $sabermasBoton ?></a>
                                     <div class="fondo-boton"></div>
                                 </div>
                             </div>
@@ -284,7 +287,7 @@ switch($_SESSION['lang']){
                 <div class="col-12">
                     <div class="contenedor-boton centro">
                         <div id ="iaido-1" class="boton boton-desplegar">
-                            <a>¿Qué es el Iaido?</a>
+                            <a><?php echo $queEsIaido ?></a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -302,7 +305,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
-                        <h3 class="subtitulo">¿Qué es el Iaido?</h3>
+                        <h3 class="subtitulo"><?php echo $queEsIaido ?></h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -325,7 +328,7 @@ switch($_SESSION['lang']){
                         <div class="col-12">
                             <div class="contenedor-boton centro inicio">
                                 <div id="iaido-2" class="boton boton-desplegar">
-                                    <a>Quiero saber más</a>
+                                    <a><?php echo $sabermasBoton ?></a>
                                     <div class="fondo-boton"></div>
                                 </div>
                             </div>
@@ -388,7 +391,7 @@ switch($_SESSION['lang']){
                 <div class="col-12">
                     <div class="contenedor-boton centro">
                         <div id ="iaido-1" class="boton boton-desplegar">
-                            <a>¿Qué es el Iaido?</a>
+                            <a><?php echo $queEsIaido ?></a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -415,7 +418,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div class="contenedor-titulo">
                         <img src="./images/kendo-enso-negativo.png">
-                        <h3 class="subtitulo">¿Qué es Ki Ken Tai?</h3>
+                        <h3 class="subtitulo"><?php echo $queEsKikentai ?></h3>
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -431,9 +434,9 @@ switch($_SESSION['lang']){
 
                 <div id ="la-demo" class="row botonera">
                     <ul class="contenedor-boton centro">
-                        <li class="boton"><a href="#tabs-1">Más información</a><div class="fondo-boton"></div></li>
-                        <li class="boton"><a href="#tabs-2">Material de descarga</a><div class="fondo-boton"></div></li>
-                        <li class="boton"><a href="#tabs-3">Demostración</a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-1"><?php echo $juegoMasInfoBoton ?></a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-2"><?php echo $descargaBoton ?></a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-3"><?php echo $demoBoton ?></a><div class="fondo-boton"></div></li>
                     </ul>
                 </div>
 
@@ -467,7 +470,7 @@ switch($_SESSION['lang']){
                 <div class="col-lg-6 col-12">
                     <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-positivo.png">
-                        <h3 class="subtitulo">¿Dónde entrenar Kendo?</h3>
+                        <h3 class="subtitulo"><?php echo $dondeEntreno ?></h3>
                     </div>
                 </div>
                 <div class="col-12">
@@ -502,7 +505,7 @@ switch($_SESSION['lang']){
                 <div class="col-12">
                     <div class="contenedor-boton centro inicio">
                         <div id="listado-de-dojos" class="boton boton-desplegar">
-                            <a>Listado de Dojos</a>
+                            <a><?php echo $listadoBoton ?></a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -549,7 +552,7 @@ switch($_SESSION['lang']){
                 <div class="col-12">
                     <div  class="contenedor-titulo">
                         <img src="./images/kendo-enso-negativo.png">
-                        <h3 class="subtitulo">Contacto</h3>
+                        <h3 class="subtitulo"><?php echo $queContacto ?></h3>
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -565,42 +568,42 @@ switch($_SESSION['lang']){
                     <div class="row estructura-formulario">
                         <div class="col-12 col-md-6">
                             <div class="caja-formulario nombre">
-                                <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="Nombre*">
-                                <span id="error-nombre" class="campos-ocultos">El nombre es obligatorio</span>
+                                <input type="text" id="nombre" name="nombre" value="" class="input input-texto" aria-required="true" aria-invalid="false" placeholder="<?php echo $placeholderNombre ?>">
+                                <span id="error-nombre" class="campos-ocultos"><?php echo $errorNombre ?></span>
                 </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="caja-formulario email">
                                 
-                <input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="E-mail*">                              
-                            <span id="error-email" class="campos-ocultos">El e-mail es obligatorio</span>
-                            <span id="mail-invalido" class="campos-ocultos">La dirección no es correcta</span>
+                <input type="email" id="email" name="email" value="" class="input input-texto" aria-required="true" aria-invalid="true" placeholder="<?php echo $placeholderEmail ?>">                              
+                            <span id="error-email" class="campos-ocultos"><?php echo $errorEmail ?></span>
+                            <span id="mail-invalido" class="campos-ocultos"><?php echo $errorEmail2 ?></span>
                     </div>
                         </div>
                         <div class="col-12">
                             <div class="caja-formulario mensaje">
-                                <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="Mensaje*">                               
-                                <span id="error-mensaje" class="campos-ocultos">El mensaje es obligatorio</span>
+                                <input type="textarea" id="mensaje" name="mensaje" value="" class="input input-texto" aria-invalid="false" placeholder="<?php echo $placeholderMensaje ?>">                               
+                                <span id="error-mensaje" class="campos-ocultos"><?php echo $errorMensaje ?></span>
                     </div>
                         </div>
                         <div class="col-12">
                             <div class="caja-formulario check-privacy">
                                 <input type="checkbox" id="checkbox1" name="checkbox1" value="1" aria-invalid="false" aria-required="true">
                                 
-                    <a>Por favor, marca esta casilla para aceptar las <a href="privacidad.html" target="_blank">condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href="https://policies.google.com/privacy?hl=es">política de privacidad de Google</a> para más información.</a>
-                            <span id="error-checkbox" class="campos-ocultos">Debes aceptar los términos y condiciones</span>
+                    <a><?php echo $checkbox1 ?></a>
+                            <span id="error-checkbox" class="campos-ocultos"><?php echo $errorCheckbox ?></span>
                         </div>
                         <div class="col-12">
                             <div class="caja-formulario check-privacy">
                                 <input type="checkbox" id="checkbox2" name="checkbox2" value="1" aria-invalid="false" aria-required="true">
-                                <a>Por favor, marca esta casilla si quieres recibir nuestra newsletter.</a>
+                                <a><?php echo $checkbox2 ?></a>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="caja-formulario-boton">
-                                <input type="submit" value="Enviar" class="input-submit obligatorio">
-                                <p id="error" class="campos-ocultos">Faltan campos obligatorios(*) por rellenar</p>
-                                <p id="mensaje-exito" class="campos-ocultos">Hemos recibido tu mensaje. Gracias por contactarnos.</p>
+                                <input type="submit" value="<?php echo $botonSubmit ?>" class="input-submit obligatorio">
+                                <p id="error" class="campos-ocultos"><?php echo $errorGeneral ?></p>
+                                <p id="mensaje-exito" class="campos-ocultos"><?php echo $mensajeExito ?></p>
                             </div>
                         </div>
                     </div>
@@ -641,7 +644,7 @@ switch($_SESSION['lang']){
                 </div>
             </div>
             <div class="col-12 copyright">
-                <p> Ki Ken Tai es una marca registrada de Circle of Creators - Copyright 2020</p>
+                <p><?php echo $footer ?></p>
             </div>
         </div>
     </footer>

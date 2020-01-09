@@ -23,6 +23,7 @@ $altLogo ="logo del juego de cartas de kendo ki ken tai";
 
 
 //MENU
+
 $elKendo = "El Kendo";
 $elJuego = "El juego";
 $laDemo = "La demo";
@@ -35,30 +36,58 @@ $contacto ="Contacto";
 
 //SLIDER
 
-$sliderTitulo ="<h1>El primer juego de cartas de Kendo</h1";
+$sliderTitulo ="El primer juego de cartas de Kendo";
 
 
 
 //BOTONES
 
-$sliderBoton ="<a>Ver una demostración</a>";
-$sliderBoton2 ="<a>¡Espera!<br>¿Pero qué es el Kendo?</a>";
-$sabermasBoton ="<a>Quiero saber más</a>";
-$iaidoBoton ="<a>¿Qué es el Iaido?</a>";
-$juegoMasInfoBoton ="<a href='#tabs-1'>Más información</a>"; 
-$descargaBoton ="<a href='#tabs-2'>Material de descarga</a>";
-$demoBoton ="<a href='#tabs-3'>Demostración</a>";
-$listadoBoton ="a>Listado de Dojos</a>";
+$sliderBoton ="Ver una demostración";
+$sliderBoton2 ="¡Espera!<br>¿Pero qué es el Kendo?";
+$sabermasBoton ="Quiero saber más";
+$iaidoBoton ="¿Qué es el Iaido?";
+$juegoMasInfoBoton ="Más información"; 
+$descargaBoton ="Material de descarga";
+$demoBoton ="Demostración";
+$listadoBoton ="Listado de Dojos";
+$botonSubmit ="Enviar";
 
 
 
 //SUBTITULOS
 
-$queEsKendo ="<h3 class='subtitulo'>¿Qué es el Kendo?</h3>";
-$queEsIaido ="<h3 class='subtitulo'>¿Qué es el Iaido?</h3>";
-$queEsKikentai ="<h3 class='subtitulo'>¿Qué es Ki Ken Tai?</h3>";
-$dondeEntreno ="<h3 class='subtitulo'>¿Dónde Kendo?</h3>";
-$queContacto ="<h3 class='subtitulo'>Contacto</h3>";
+$queEsKendo ="¿Qué es el Kendo?";
+$queEsIaido ="¿Qué es el Iaido?";
+$queEsKikentai ="¿Qué es Ki Ken Tai?";
+$dondeEntreno ="¿Dónde entrenar Kendo?";
+$queContacto ="Contacto";
+
+
+//FORMULARIO
+
+$placeholderNombre ="Nombre*";
+$placeholderEmail ="E-mail*";
+$placeholderMensaje ="Mensaje*";
+
+$errorNombre ="El nombre es obligatorio";
+$errorEmail ="El e-mail es obligatorio";
+$errorEmail2 ="La dirección no es correcta";
+$errorMensaje ="El mensaje es obligatorio";
+
+$errorCheckbox ="Debes aceptar los términos y condiciones";
+
+$errorGeneral ="Faltan campos obligatorios(*) por rellenar";
+
+$checkbox1 ="Por favor, marca esta casilla para aceptar las <a href='privacidad.html' target='_blank'>condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href='https://policies.google.com/privacy?hl=es'>política de privacidad de Google</a> para más información.";
+$checkbox2 ="Por favor, marca esta casilla si quieres recibir nuestra newsletter.";
+                        
+
+ $mensajeExito ="Hemos recibido tu mensaje. Gracias por contactarnos.";
+
+
+//FOOTER
+
+$footer ="<p> Ki Ken Tai es una marca registrada de Circle of Creators - Copyright 2020</p>";
 
 
 //TEXTOS
@@ -114,32 +143,4 @@ $juegoIntro ="<p>
                                 Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
                             </p>";  
                     
-                    
-//FORMULARIO
-
-$placeholderNombre ="Nombre*";
-$placeholderEmail ="E-mail*";
-$placeholderMensaje ="Mensaje*";
-
-$errorNombre ="El nombre es obligatorio";
-$errorEmail ="El e-mail es obligatorio";
-$errorEmail2 ="La dirección no es correcta";
-$errorMensaje ="El mensaje es obligatorio";
-
-$errorCheckbox ="Debes aceptar los términos y condiciones";
-
-$errorGeneral ="Faltan campos obligatorios(*) por rellenar";
-
-$checkbox1 ="<a>Por favor, marca esta casilla para aceptar las <a href='privacidad.html' target='_blank'>condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href='https://policies.google.com/privacy?hl=es'>política de privacidad de Google</a> para más información.</a>";
-$checkbox2 ="Por favor, marca esta casilla si quieres recibir nuestra newsletter.";
-                        
-
- $mensajeExito ="Hemos recibido tu mensaje. Gracias por contactarnos.";
-
-
-//FOOTER
-
-$footer ="<p> Ki Ken Tai es una marca registrada de Circle of Creators - Copyright 2020</p>";                                
-
-
 ?>
