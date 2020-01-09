@@ -14,7 +14,7 @@ $title ="KI KEN TAI - El primer juego de cartas de Kendo";
 
 $description ="KI KEN TAI es el primer juego de cartas de Kendo";
 
-$canonical;
+$canonical = "<link href='URL' rel='canonical'>";
 
 //ALTS
 

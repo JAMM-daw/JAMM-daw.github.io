@@ -30,39 +30,27 @@ switch($_SESSION['lang']){
 
 <html>
 
-
-
 <head>
     <!--Codificación del sitio-->
     <meta charset="UTF-8">
-    <html lang="<?php echo $codigoIdioma ?>">
+    <html lang=" <?php echo $codigoIdioma ?> ">
 
     <!--SEO TAGS-->
-    <title><?php echo $title ?></title>
+    <title> <?php echo $title ?> </title>
     <meta name="keywords" content="<?php echo $keywords ?>">
     <meta name="author" content="José Ángel Maestre, Circle Of Creators">
     <meta name="description" content="<?php echo $description ?>">
-    <!-- SITIO INVISIBLE HASTA PUESTA ONLINE -->
-    <meta name="robots" content="noindex, nofollow">
-    <link href="URL" rel="canonical">
 
-    <!-- Carga de scripts -->
+    <!-- MODO DESARROLLO - SITIO INVISIBLE PARA ROBOTS HASTA COMIENZO DE CAMPAÑA -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Etiqueta canonical, indica que es el contenido original y las otras páginas son duplicados/traducciones -->
+    <?php echo $canonical ?>
+
+    
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Flexbox-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css"> -->
-    <!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!--jQuery UI-->
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="crossorigin="anonymous"></script>
-    <!---->
-    <script src="./js/desplegar.js"></script>
-    <script src="./js/sticky-header.js"></script>
-    <script src="./js/slider.js"></script>
-    <script src="./js/responsiveslides.min.js"></script>
-    <!---->
-    <!---->
+
     <!-- CSS & Responsive-->
     
     <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
@@ -668,7 +656,27 @@ switch($_SESSION['lang']){
             </div>
         </div>
     </footer>
-<script type="text/javascript" src="./js/form.js"> </script>
+    
+
+    <!-- FRAMEWORKS DE JAVASCRIPT -->
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="crossorigin="anonymous"></script>
+	<!--ResponsiveSlides-->
+    <script src="./js/responsiveslides.min.js"></script>
+    
+    <!--CARGA DE SCRIPTS JS-->
+	<!--Script de slider-->
+    <script src="./js/slider.js"></script>
+    <!-- Scripts de navegación-->
+    <script src="./js/desplegar.js"></script>
+    <!-- Script de sticky header-->
+    <script src="./js/sticky-header.js"></script>   
+    <!-- AJAX del formulario --> 
+	<script type="text/javascript" src="./js/form.js"> </script>
+
+
 </body>
 
 </html>
