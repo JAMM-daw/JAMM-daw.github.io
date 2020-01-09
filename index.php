@@ -1,18 +1,15 @@
 <?php 
 session_start();
 
-
-
 if ( isset($_GET['lang']) ){
+
     $_SESSION['lang'] = $_GET['lang'];
     header('Location:'.$_SERVER['PHP_SELF']);
     exit();
 }
 else {
-    $_SESSION['lang'] ="es";
+
 }
-
-
 
 switch($_SESSION['lang']){
     case "es":
@@ -30,6 +27,7 @@ switch($_SESSION['lang']){
 ?>
 
 <!DOCTYPE html>
+
 <html>
 
 
