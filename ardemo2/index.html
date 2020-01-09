@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<script src="js/aframe-v0.8.2.min.js"></script>
-	<script src="js/aframe-ar.js"></script>
-	<script src="js/aframe-extras.loaders.min.js"></script>
+	<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+	<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.6/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
 	<script src="js/touchme.js"></script>
 	<link rel="stylesheet" href="styles/style.css">
 
 
-	    <script>
+	        <script>
         AFRAME.registerComponent('vidhandler', {
             init: function() {
                 this.toggle = false;
-                this.videoNodes = document.querySelectorAll("video");
-                this.videoNodes.pause();
+                this.vid = document.querySelector("#men");
+                this.vid.pause();
             },
             tick: function() {
                 if (this.el.object3D.visible == true) {
                     if (!this.toggle) {
                         this.toggle = true;
-                        for (let i = 0; i < this.videoNodes.length; i++) {
-                this.videoNodes[i].play();
-            }
+                        this.vid.play();
                     }
                 } else {
-                    for (let i = 0; i < this.videoNodes.length; i++) {
-            this.videoNodes[i].pause();
+                    this.toggle = false;
+                    this.vid.pause();
                 }
-                this.toggle = false;
             }
         });
 
@@ -35,14 +32,14 @@
         }
 
         function playvid() {
-            videoNodes.play();
+            vid.play();
         }
     </script>
 
 <body style="margin : 0px; overflow: hidden;">
 
 		<a-scene embedded arjs='trackingMethod: best; patternRatio: 0.9; debugUIEnabled: false; maxDetectionRate:30;' antialias="true">
-			<a-entity id="point_light_1" light="type: point; intensity: 5.1;" position="0 0 0"></a-entity>
+			<a-entity camera></a-entity>
 
         <a-assets>
             <video preload="auto" id="men" poster="ANY IMAGE PATH (THUMBNAIL)" response-type="arraybuffer" loop="true" crossorigin webkit-playsinline playsinline controls>
