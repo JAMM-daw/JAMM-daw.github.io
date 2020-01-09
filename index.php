@@ -44,17 +44,20 @@ switch($_SESSION['lang']){
     <!-- MODO DESARROLLO - SITIO INVISIBLE PARA ROBOTS HASTA COMIENZO DE CAMPAÑA -->
     <meta name="robots" content="noindex, nofollow">
     <!-- Etiqueta canonical, indica que es el contenido original y las otras páginas son duplicados/traducciones -->
-    <?php echo $canonical ?>
+    <?php 
 
-    
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    if ($_SESSION['lang'] == "es") {
+        echo $canonical;
+    }
+     
+    ?>
 
     <!-- CSS & Responsive-->
-    
     <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <meta name="viewport" content="width=device-width">
 
 </head>
@@ -68,75 +71,59 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
                 </div>
             </div>
             <div class="col-10">
                 <ul class="lang-menu">
-                    <li id="menu-es" class="lang-link"><a href="index.php?lang=es">ES</a></li>
-                    <li id="menu-en" class="lang-link"><a href="index.php?lang=en">EN</a></li>
-                    <li id="menu-fr" class="lang-link"><a href="index.php?lang=fr">FR</a></li>
+                    <li class="lang-link"><a href="index.php?lang=es">ES</a></li>
+                    <li class="lang-link"><a href="index.php?lang=en">EN</a></li>
+                    <li class="lang-link"><a href="index.php?lang=fr">FR</a></li>
                 </ul>
                 <ul class="menu">
-                    <li id="menu-01" class="menu-link"><a href="#el-kendo">El Kendo</a></li>
-                    <li id="menu-02" class="menu-link"><a href="#el-juego">El juego</a></li>
-                    <li id="menu-03" class="menu-link"><a href="#la-demo">La demo</a></li>
-                    <li id="menu-04" class="menu-link"><a href="#dojos">Dojos</a></li>
-                    <li id="menu-05" class="menu-link"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-link"><a href="#el-kendo">El Kendo</a></li>
+                    <li class="menu-link"><a href="#el-juego">El juego</a></li>
+                    <li class="menu-link"><a href="#la-demo">La demo</a></li>
+                    <li class="menu-link"><a href="#dojos">Dojos</a></li>
+                    <li class="menu-link"><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <header id="menu-01" class="desktop menu sticky">
+    <header id="menu-02" class="desktop menu sticky">
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
                 </div>
             </div>
             <div class="col-10">
                 <ul class="lang-menu">
-                    <li id="menu-es" class="lang-link"><a href="#">ES</a></li>
-                    <li id="menu-en" class="lang-link"><a href="">EN</a></li>
-                    <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
+                    <li class="lang-link"><a href="#">ES</a></li>
+                    <li class="lang-link"><a href="">EN</a></li>
+                    <li class="lang-link"><a href="">FR</a></li>
                 </ul>
                 <ul class="menu">
-                    <li id="menu-01" class="menu-link"><a href="#el-kendo">El Kendo</a></li>
-                    <li id="menu-02" class="menu-link"><a href="#el-juego">El juego</a></li>
-                    <li id="menu-03" class="menu-link"><a href="#la-demo">La demo</a></li>
-                    <li id="menu-04" class="menu-link"><a href="#dojos">Dojos</a></li>
-                    <li id="menu-05" class="menu-link"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-link"><a href="#el-kendo">El Kendo</a></li>
+                    <li class="menu-link"><a href="#el-juego">El juego</a></li>
+                    <li class="menu-link"><a href="#la-demo">La demo</a></li>
+                    <li class="menu-link"><a href="#dojos">Dojos</a></li>
+                    <li class="menu-link"><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <header id="menu-03" class="mobile menu top">
+
+<header id="menu-03" class="mobile menu top sticky">
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
+                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
                 </div>
             </div>
             <div class="col-10">
                 <div class="contenedor-qr">
-                    <img href="/ar.html" src="./images/qr-code.png">
-                </div>
-                <div class="contenedor-menu">
-                    <img src="./images/hamburguesa.png">
-                </div>
-            </div>
-        </div>
-    </header>
-<header id="menu-04" class="mobile menu top sticky">
-        <div class="row">
-            <div class="col-2">
-                <div class="contenedor-logo">
-                    <a href="#"><img src="./images/kikentai-logo-2.png" alt="logo del juego de cartas de kendo ki ken tai"></a>
-                </div>
-            </div>
-            <div class="col-10">
-                <div class="contenedor-qr">
-                    <img href="/ardemo2/" src="./images/qr-code.png">
+                    <a href="ar/index.html"><img href="/ardemo2/" src="./images/qr-code.png"></a>
                 </div>
                 <div id="lanza-menu" class="contenedor-menu">
                     <img src="./images/hamburguesa.png">
@@ -148,20 +135,22 @@ switch($_SESSION['lang']){
   
     <div class="contenedor-principal">
 
+    	<!--Menú desplegable móvil -->
+
         <section class="menu-full-mobile oculto">
             <div class="row">
                 <div class="col-12">
                     <ul class="lang-menu">
-                        <li id="menu-es" class="lang-link"><a href="#">ES</a></li>
-                        <li id="menu-en" class="lang-link"><a href="">EN</a></li>
-                        <li id="menu-fr" class="lang-link"><a href="">FR</a></li>
+                        <li class="lang-link"><a href="#">ES</a></li>
+                        <li class="lang-link"><a href="">EN</a></li>
+                        <li class="lang-link"><a href="">FR</a></li>
                     </ul>
                     <ul class="menu">
-                        <li id="menu-01" class="menu-link"><a href="#el-kendo">El Kendo</a></li>
-                        <li id="menu-02" class="menu-link"><a href="#el-juego">El juego</a></li>
-                        <li id="menu-03" class="menu-link"><a href="#la-demo">La demo</a></li>
-                        <li id="menu-04" class="menu-link"><a href="#dojos">Dojos</a></li>
-                        <li id="menu-05" class="menu-link"><a href="#contacto">Contacto</a></li>
+                        <li class="menu-link"><a href="#el-kendo">El Kendo</a></li>
+                        <li class="menu-link"><a href="#el-juego">El juego</a></li>
+                        <li class="menu-link"><a href="#la-demo">La demo</a></li>
+                        <li class="menu-link"><a href="#dojos">Dojos</a></li>
+                        <li class="menu-link"><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
