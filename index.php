@@ -24,18 +24,20 @@ switch($_SESSION['lang']){
     default: 
         require('locale/es.php');        
     }
+
+
+
 ?>
 
 <!DOCTYPE html>
 
-<html>
+<html lang=" <?php echo $codigoIdioma ?> ">
 
 <head>
 	<!--Codificación del sitio-->
 
     <meta charset="UTF-8">
-    <html lang=" <?php echo $codigoIdioma ?> ">
-
+    
     <meta name="author" content="José Ángel Maestre, Circle Of Creators">
 
     <!--SEO TAGS-->
@@ -46,6 +48,7 @@ switch($_SESSION['lang']){
 
     <!-- MODO DESARROLLO - SITIO INVISIBLE PARA ROBOTS HASTA COMIENZO DE CAMPAÑA -->
     <meta name="robots" content="noindex, nofollow">
+
     <!-- Etiqueta canonical, indica que es el contenido original y las otras páginas son duplicados/traducciones -->
     <?php 
 
@@ -126,7 +129,7 @@ switch($_SESSION['lang']){
             </div>
             <div class="col-10">
                 <div class="contenedor-qr">
-                    <a href="ar/index.html"><img href="/ardemo2/" src="./images/qr-code.png"></a>
+                    <a href="ar/index.html"><img href="https://esedigital.ovh/kikentai/ardemo2/" src="./images/qr-code.png"></a>
                 </div>
                 <div id="lanza-menu" class="contenedor-menu">
                     <img src="./images/hamburguesa.png">
@@ -228,7 +231,13 @@ switch($_SESSION['lang']){
                         </div>
                     </div>
                     <!-- <img src="./images/practicar-kendo.jpg"> -->
-                    <iframe id="yt-frame" width="100%" height="850px" src="https://www.youtube.com/embed/LHNPoSBJvn8?autoplay=1&mute=1&enablejsapi=1"> </iframe>
+                    <iframe id="yt-frame" class="desktop" width="853" height="480" src="https://www.youtube.com/embed/b3q6i_k8oME?autoplay=1&mute=1&loop=1&playlist=b3q6i_k8oME&controls=0&enablejsapi=1&modestbranding=1&start=77"> </iframe>
+                    <ul class="rslides mobile">
+                            <li><img src="./images/slides/imagen-0.jpg"></li>
+                            <li><img src="./images/slides/imagen-1.jpg"></li>
+                            <li><img src="./images/slides/imagen-2.jpg"></li>
+                            <li><img src="./images/slides/imagen-3.jpg"></li>
+                	</ul>
                 </div>
 
             <div class="solapa inferior blanco oculto"></div>
@@ -334,7 +343,13 @@ switch($_SESSION['lang']){
                             </div>
                         </div>
                     </div>
-                <img src="./images/iaido_general_01.jpg">
+                <!-- <img src="./images/iaido_general_01.jpg"> -->
+                <ul class="rslides">
+                            <li><img src="./images/slides/imagen-0.jpg"></li>
+                            <li><img src="./images/slides/imagen-1.jpg"></li>
+                            <li><img src="./images/slides/imagen-2.jpg"></li>
+                            <li><img src="./images/slides/imagen-3.jpg"></li>
+                </ul>
             </div>
 
             <div class="solapa inferior blanco oculto"></div>
@@ -455,8 +470,31 @@ switch($_SESSION['lang']){
                     </div>
 
                 </div>
+                <div id="tabs-2" class="row">
+                 	<div class="col-lg-6 col-12">
+                        <div class="contenedor-imagen">
+                            <img src="./images/kendo-generica.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="contenedor-texto">
+                            <p>
+                                Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
+                            </p>
+                        </div>
+                 	</div>
+            	</div>
+            	<div id="tabs-3" class="row">
+                 	<div class="col-12">
+                 		<ul class="rslides">
+                            <li><img src="./images/slides/imagen-0.jpg"></li>
+                            <li><img src="./images/slides/imagen-1.jpg"></li>
+                            <li><img src="./images/slides/imagen-2.jpg"></li>
+                            <li><img src="./images/slides/imagen-3.jpg"></li>
+                		</ul>
+                    </div>
 
-            </div>
+                </div>
 
             <div class="solapa inferior azul"></div>
             
@@ -491,7 +529,7 @@ switch($_SESSION['lang']){
 
 
                         <div class="caja-mapa">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1y1FBLnJkUs7TAMh6CSfgZu3vM-HhPW6w" width="100%" height="650"></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1y1FBLnJkUs7TAMh6CSfgZu3vM-HhPW6w&zoom=5&ll=40.47047006933437, -3.6927482602304735" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
 
 
@@ -667,6 +705,8 @@ switch($_SESSION['lang']){
     <script src="./js/sticky-header.js"></script>   
     <!-- AJAX del formulario --> 
 	<script type="text/javascript" src="./js/form.js"> </script>
+
+
 
 
 </body>

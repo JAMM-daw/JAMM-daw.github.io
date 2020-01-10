@@ -1,7 +1,7 @@
 
  $(document).ready(function($){
- 
-    // on submit...
+
+
     $('#ajax-form').submit(function(e){
  
         e.preventDefault();
@@ -11,7 +11,7 @@
         $("#error-email").hide();
         $("#mail-invalido").hide()
         $("#error-mensaje").hide();
-        $("#error-checkout").hide();
+        $("#error-checkbox").hide();
  
         var errores;
         var name = $("input#nombre").val();
@@ -19,9 +19,7 @@
         var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
         var mensaje = $("input#mensaje").val();
         var checkbox1 = $("input#checkbox1").val();
-        //var checkbox2 = $("input#checkbox2").val();
-    
-     
+             
         if(name == ""){
             $("#error-nombre").fadeIn()
             $("input#nombre").focus();
@@ -57,12 +55,13 @@
             return false;
          
         }
+
  
-        // ajax
+        ajax
         $.ajax({
             type:"POST",
             url: "./form/ajax-form-store.php",
-            data: $(this).serialize(), // get all form field value in serialize form
+            data: $(this).serialize(), 
             success: function(){
               $("#mensaje-exito").fadeIn();
               $(".input-submit").fadeOut();
@@ -71,4 +70,6 @@
     });  
  
     return false;
-    });
+
+
+});
