@@ -1,8 +1,7 @@
 <?php 
 
-$lang = "es";
+$lang = "en";
 
 require('../index.php');
-
 
 ?>

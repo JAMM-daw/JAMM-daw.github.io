@@ -1,0 +1,12 @@
+RewriteEngine On
+
+#Redirige el indice de la web al idioma predeterminado
+RewriteRule ^$ /kikentai/es/ [R=301,L]
+RewriteRule ^index\.php$ /kikentai/es/ [R=301,L]
+
+#Convierte las queries de php en url semanticas
+RewriteRule ^(index.php?lang=es)/ /kikentai/es/ [R=301,L]
+RewriteRule ^(index.php?lang=en)/ /kikentai/en/ [R=301,L]
+RewriteRule ^(index.php?lang=fr)/ /kikentai/fr/ [R=301,L]
+
+
