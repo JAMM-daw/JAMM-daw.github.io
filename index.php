@@ -50,6 +50,23 @@ switch($_SESSION['lang']){
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Etiqueta canonical, indica que es el contenido original y las otras páginas son duplicados/traducciones -->
+
+    <!-- FRAMEWORKS DE JAVASCRIPT -->
+    <!-- jQuery-->
+    <script src="./js/frameworks/jquery-3.4.1.min.js"></script>
+    <!--jQuery UI-->
+    <script src="./js/frameworks/jquery-ui.min.js"></script>
+	<!--ResponsiveSlides-->
+    <script src="./js/frameworks/responsiveslides.min.js"></script>
+
+
+        <!-- CSS & Responsive-->
+    <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+                <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
     <?php 
 
     if ($_SESSION['lang'] == "es") {
@@ -57,12 +74,6 @@ switch($_SESSION['lang']){
     }
      
     ?>
-
-    <!-- CSS & Responsive-->
-    <link rel="stylesheet" href="./fonts/fonts.css" type="text/css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-        <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <meta name="viewport" content="width=device-width">
 
@@ -77,7 +88,7 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt=" <?php echo $altLogo ?> "></a>
+                    <a href="/#"><img src="./images/logos/kikentai-logo.png" alt=" <?php echo $altLogo ?> "></a>
                 </div>
             </div>
             <div class="col-10">
@@ -100,7 +111,7 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt=" <?php echo $altLogo ?> " ></a>
+                    <a href="/#"><img src="./images/logos/kikentai-logo.png" alt=" <?php echo $altLogo ?> " ></a>
                 </div>
             </div>
             <div class="col-10">
@@ -124,22 +135,22 @@ switch($_SESSION['lang']){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="/#"><img src="./images/kikentai-logo-2.png" alt=" <?php echo $altLogo ?> "></a>
+                    <a href="/#"><img src="./images/logos/kikentai-logo.png" alt=" <?php echo $altLogo ?> "></a>
                 </div>
             </div>
             <div class="col-10">
                 <div class="contenedor-qr">
-                    <a href="ar/index.html"><img href="https://esedigital.ovh/kikentai/ardemo2/" src="./images/qr-code.png"></a>
+                    <a href="ar/index.html"><img href="https://esedigital.ovh/kikentai/ardemo2/" src="./images/menu/qr-code.png"></a>
                 </div>
                 <div id="lanza-menu" class="contenedor-menu">
-                    <img src="./images/hamburguesa.png">
+                    <img src="./images/menu/hamburguesa.png">
                 </div>
             </div>
         </div>
     </header>
 
   
-    <div class="contenedor-principal">
+    <div class="contenedor-principal oculto">
 
     	<!--Menú desplegable móvil -->
 
@@ -185,12 +196,12 @@ switch($_SESSION['lang']){
             </div>
             <div class="capa-slider"></div>
                 <ul class="rslides">
-                            <li><img src="./images/slides/imagen-0.jpg"></li>
-                            <li><img src="./images/slides/imagen-1.jpg"></li>
-                            <li><img src="./images/slides/imagen-2.jpg"></li>
-                            <li><img src="./images/slides/imagen-3.jpg"></li>
+                            <li><img src="./images/slides-portada/kikentai-kendoka.jpg"></li>
+                            <li><img src="./images/slides-portada/kikentai-men-nuki-do.jpg"></li>
+                            <li><img src="./images/slides-portada/kikentai-kendo-shiai.jpg"></li>
+                            <li><img src="./images/slides-portada/kikentai-men-kaeshi.jpg"></li>
                 </ul>
-            <img class="cartas-portada" src="./images/cartas-kikentai-portada.png">
+            <img class="cartas-portada" src="./images/portada/cartas-kikentai.png">
             <div class="solapa inferior blanco"></div>
             
         </section>
@@ -201,7 +212,7 @@ switch($_SESSION['lang']){
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div  class="contenedor-titulo">
-                        <img src="./images/kendo-enso-positivo.png">
+                        <img src="./images/elementos-decorativos/kendo-enso-positivo.png">
                         <h3 class="subtitulo"> <?php echo $queEsKendo ?> </h3>
                     </div>
                 </div>
@@ -230,14 +241,17 @@ switch($_SESSION['lang']){
                             </div>
                         </div>
                     </div>
-                    <!-- <img src="./images/practicar-kendo.jpg"> -->
                     <iframe id="yt-frame" class="desktop" width="853" height="480" src="https://www.youtube.com/embed/b3q6i_k8oME?autoplay=1&mute=1&loop=1&playlist=b3q6i_k8oME&controls=0&enablejsapi=1&modestbranding=1&start=77"> </iframe>
+<!--                      <video class="desktop" width="853" height="480" autoplay muted loop>
+                        <source src="./videos/kendo-video.mp4" type="video/mp4">
+                        <source src="" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>  -->
                     <ul class="rslides mobile">
-                            <li><img src="./images/slides/imagen-0.jpg"></li>
-                            <li><img src="./images/slides/imagen-1.jpg"></li>
-                            <li><img src="./images/slides/imagen-2.jpg"></li>
-                            <li><img src="./images/slides/imagen-3.jpg"></li>
-                	</ul>
+                            <li><img src="./images/slides-kendo/kendo-tsuki.jpg"></li>
+                            <li><img src="./images/slides-kendo/kendo-bogu.jpg"></li>
+                            <li><img src="./images/slides-kendo/kendo-entrenamiento.jpg"></li>
+                    </ul>
                 </div>
 
             <div class="solapa inferior blanco oculto"></div>
@@ -259,7 +273,7 @@ switch($_SESSION['lang']){
                         </p>
                     </div>
                     <div class="contenedor-imagen mobile">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/kendo-sabermas/kendo-shinai.jpg">
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -269,7 +283,7 @@ switch($_SESSION['lang']){
                         </p>
                     </div>
                     <div class="contenedor-imagen mobile">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/kendo-sabermas/kendo-seiza.jpg">
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -279,18 +293,18 @@ switch($_SESSION['lang']){
                         </p>
                     </div>
                     <div class="contenedor-imagen mobile">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/kendo-sabermas/kendo-men.jpg">
                     </div>
                 </div>
                 <div class="col-sm-6 desktop">
                     <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/kendo-sabermas/kendo-shinai.jpg">
                     </div>
                     <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/kendo-sabermas/kendo-seiza.jpg">
                     </div>
                     <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/kendo-sabermas/kendo-men.jpg">
                     </div>
                 </div>
                 <div class="col-12">
@@ -313,7 +327,7 @@ switch($_SESSION['lang']){
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="contenedor-titulo">
-                        <img src="./images/kendo-enso-positivo.png">
+                        <img src="./images/elementos-decorativos/kendo-enso-positivo.png">
                         <h3 class="subtitulo"><?php echo $queEsIaido ?></h3>
                     </div>
                 </div>
@@ -345,10 +359,9 @@ switch($_SESSION['lang']){
                     </div>
                 <!-- <img src="./images/iaido_general_01.jpg"> -->
                 <ul class="rslides">
-                            <li><img src="./images/slides/imagen-0.jpg"></li>
-                            <li><img src="./images/slides/imagen-1.jpg"></li>
-                            <li><img src="./images/slides/imagen-2.jpg"></li>
-                            <li><img src="./images/slides/imagen-3.jpg"></li>
+                            <li><img src="./images/slides-iaido/iaido-nukisuke.jpg"></li>
+                            <li><img src="./images/slides-iaido/iaido-noto.jpg"></li>
+                            <li><img src="./images/slides-iaido/iaido-kirioroshi.jpg"></li>
                 </ul>
             </div>
 
@@ -360,6 +373,17 @@ switch($_SESSION['lang']){
         <section class="iaido iaido-2 saber-mas oculto">
 
             <div class="row">
+                <div class="col-sm-6 desktop">
+                    <div class="contenedor-imagen">
+                        <img src="./images/iaido-sabermas/iaido-chiburi.jpg">
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="./images/iaido-sabermas/iaido-iaito.jpg">
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="./images/iaido-sabermas/iaido-furikaburi.jpg">
+                    </div>
+                </div>
                 <div class="col-md-6 col-12">
                     <div class="contenedor-texto">
                         <p>
@@ -369,7 +393,7 @@ switch($_SESSION['lang']){
                         </p>
                     </div>
                     <div class="contenedor-imagen mobile">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/iaido-sabermas/iaido-chiburi.jpg">
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -379,7 +403,7 @@ switch($_SESSION['lang']){
                         </p>
                     </div>
                     <div class="contenedor-imagen mobile">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/iaido-sabermas/iaido-iaito.jpg">
                     </div>
                     <div class="contenedor-texto">
                         <p>
@@ -389,20 +413,9 @@ switch($_SESSION['lang']){
                         </p>
                     </div>
                     <div class="contenedor-imagen mobile">
-                        <img src="./images/kendo-generica.jpg">
+                        <img src="./images/iaido-sabermas/iaido-furikaburi.jpg">
                     </div>
-                </div>
-                <div class="col-sm-6 desktop">
-                    <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
-                    </div>
-                    <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
-                    </div>
-                    <div class="contenedor-imagen">
-                        <img src="./images/kendo-generica.jpg">
-                    </div>
-                </div>
+                </div>                
                 <div class="col-12">
                     <div class="contenedor-boton centro">
                         <div id ="iaido-1" class="boton boton-desplegar">
@@ -427,12 +440,12 @@ switch($_SESSION['lang']){
             <div class="row sin-margen-izq">
                 <div class="col-lg-6 col-12">
                     <div id="el-juego" class="contenedor-imagen">
-                        <img src="./images/cartas-kikentai.png">
+                        <img src="./images/elementos-decorativos/cartas-kikentai.png">
                     </div>
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="contenedor-titulo">
-                        <img src="./images/kendo-enso-negativo.png">
+                        <img src="./images/elementos-decorativos/kendo-enso-negativo.png">
                         <h3 class="subtitulo"><?php echo $queEsKikentai ?></h3>
                     </div>
                     <div class="contenedor-texto">
@@ -507,7 +520,7 @@ switch($_SESSION['lang']){
             <div id="dojos" class="row">
                 <div class="col-lg-6 col-12">
                     <div  class="contenedor-titulo">
-                        <img src="./images/kendo-enso-positivo.png">
+                        <img src="./images/elementos-decorativos/kendo-enso-positivo.png">
                         <h3 class="subtitulo"><?php echo $dondeEntreno ?></h3>
                     </div>
                 </div>
@@ -529,7 +542,7 @@ switch($_SESSION['lang']){
 
 
                         <div class="caja-mapa">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1y1FBLnJkUs7TAMh6CSfgZu3vM-HhPW6w&zoom=5&ll=40.47047006933437, -3.6927482602304735" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1y1FBLnJkUs7TAMh6CSfgZu3vM-HhPW6w&ll=40.47047006933437, -3.6927482602304735" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
 
 
@@ -589,7 +602,7 @@ switch($_SESSION['lang']){
             <div class="row">
                 <div class="col-12">
                     <div  class="contenedor-titulo">
-                        <img src="./images/kendo-enso-negativo.png">
+                        <img src="./images/elementos-decorativos/kendo-enso-negativo.png">
                         <h3 class="subtitulo"><?php echo $queContacto ?></h3>
                     </div>
                     <div class="contenedor-texto">
@@ -660,7 +673,7 @@ switch($_SESSION['lang']){
                 <div class="row">
                     <div class="col-12">
                         <div class="logo-footer">
-                            <img src="./images/circle-of-creators.png">
+                            <img src="./images/footer/circle-of-creators.png">
                         </div>
                     </div>
                 </div>
@@ -668,14 +681,14 @@ switch($_SESSION['lang']){
                     <div class="col-6">
                         <div class="caja-icono izq">
                             <a href="https://facebook.com/circle-of-creators">
-                                    <img src="./images/facebook.png">
+                                    <img src="./images/footer/facebook.png">
                                 </a>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="caja-icono der">
                             <a href="mailto:circle-of-creators@mail.com">
-                                    <img src="./images/email.png">
+                                    <img src="./images/footer/email.png">
                                 </a>
                         </div>
                     </div>
@@ -686,25 +699,16 @@ switch($_SESSION['lang']){
             </div>
         </div>
     </footer>
-    
-
-    <!-- FRAMEWORKS DE JAVASCRIPT -->
-    <!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!--jQuery UI-->
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="crossorigin="anonymous"></script>
-	<!--ResponsiveSlides-->
-    <script src="./js/responsiveslides.min.js"></script>
-    
-    <!--CARGA DE SCRIPTS JS-->
-	<!--Script de slider-->
+       
+        <!--CARGA DE SCRIPTS JS-->
+    <!--Script de slider-->
     <script src="./js/slider.js"></script>
     <!-- Scripts de navegación-->
     <script src="./js/desplegar.js"></script>
     <!-- Script de sticky header-->
     <script src="./js/sticky-header.js"></script>   
     <!-- AJAX del formulario --> 
-	<script type="text/javascript" src="./js/form.js"> </script>
+    <script type="text/javascript" src="./js/form.js"> </script>
 
 
 

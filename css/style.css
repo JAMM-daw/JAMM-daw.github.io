@@ -224,6 +224,8 @@ a:hover {
 
 /* CONTENEDOR PRINCIPAL */
 
+
+
 section .row {
     margin: 0;
   }
@@ -241,6 +243,7 @@ section .row {
   -webkit-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
   -moz-box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
   box-shadow: 0px 3px 15px 1px rgb(111, 111, 111);
+  background: white;
 }
 
 
@@ -316,25 +319,12 @@ section .row {
   height: 100%;
   display: block;
   z-index: 20;
-  background-image: url('../images/mancha-de-tinta-clara.png');
+  background-image: url('../images/portada/mancha-de-tinta-clara.png');
   background-color: #2c213c;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.6;
 }
-
-/*.capa-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 20;
-  background-image: url('../images/madera-cortado.jpg');
-  background-size: cover;
-  background-repeat: repeat;
-  opacity: 0.6;
-}
-*/
 
 .slider .contenedor-boton {
   padding-top: 45px;
@@ -360,7 +350,7 @@ section .row {
   width: 100%;
   height: 100%;
   max-height: 130px;
-  background-image: url('../images/solapa-superior-1.png');
+  background-image: url('../images/solapas/solapa-superior-1.png');
   z-index: 100;
   background-size: cover;
   background-repeat: no-repeat;
@@ -372,7 +362,7 @@ section .row {
   width: 100%;
   height: 100%;
   max-height: 110px;
-  background-image: url('../images/solapa-inferior-1.png');
+  background-image: url('../images/solapas/solapa-inferior-1.png');
   z-index: 100;
   background-size: cover;
   background-repeat: no-repeat;
@@ -384,7 +374,7 @@ section .row {
   width: 100%;
   height: 100%;
   max-height: 120px;
-  background-image: url('../images/solapa-superior-2.png');
+  background-image: url('../images/solapas/solapa-superior-2.png');
   z-index: 100;
   background-size: cover;
   background-repeat: no-repeat;
@@ -396,7 +386,7 @@ section .row {
   width: 100%;
   height: 100%;
   max-height: 110px;
-  background-image: url('../images/solapa-inferior-2.png');
+  background-image: url('../images/solapas/solapa-inferior-2.png');
   z-index: 100;
   background-size: cover;
   background-repeat: no-repeat;
@@ -408,16 +398,17 @@ section .row {
   width: 100%;
   height: 100%;
   max-height: 80px;
-  background-image: url('../images/corte-azul-2.png');
+  background-image: url('../images/solapas/corte-azul.png');
   z-index: 100;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 
+
 .kendo.intro, .kendo.saber-mas, .iaido.intro, .iaido.saber-mas, .mapa.intro, .listado, .listado-de-dojos {
-  background-image: url('../images/madera-cortado.jpg');
-  background-size: cover;
+  background-image: url('../images/fondos/madera-cortado.jpg');
+  background-size: 100%;
   background-repeat: repeat;
 }
 
@@ -429,38 +420,24 @@ section .row {
   /*max-height: 650px;*/
 }
 
-.kendo.video .row {
-  position: absolute;
-  z-index: 20;
-  width: 100%;
-  top: 40%;
-}
-
-.caja-video {
-  position: relative;
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
-.caja-video img{
-  width: 100%;
-  height:auto;
-}
 
 .kendo.video .row {
-  position: absolute;
-  z-index: 20;
-  width: 100%;
-  top: 50%;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    top: 50%;
 }
+
 
 .caja-video {
 position: relative;
 padding-bottom: 56.25%;
 padding-top: 30px; height: 0; overflow: hidden;
+width: 100%;
+display: block;
 }
- 
+
+
 .caja-video iframe,
 .caja-video object,
 .caja-video embed {
@@ -470,6 +447,20 @@ left: 0;
 width: 100%;
 height: 100%;
 }
+
+
+/*.caja-video {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.caja-video video {
+  width: 100%;
+  height: auto;
+}*/
 
 .caja-texto {
   padding: 125px 0;
@@ -544,7 +535,7 @@ section .contenedor-titulo .subtitulo {
 }
 
 .kendo.saber-mas .col-sm-6:first-child {
-  background-image: url('../images/fondo-texto.png');
+  background-image: url('../images/fondos/fondo-texto.png');
   background-repeat: no-repeat;
 }
 
@@ -586,7 +577,7 @@ section .contenedor-titulo .subtitulo {
 }
 
 .iaido.saber-mas .col-sm-6:nth-child(2) {
-  background-image: url('../images/fondo-texto.png');
+  background-image: url('../images/fondos/fondo-texto.png');
   background-repeat: no-repeat;
 }
 
@@ -624,7 +615,7 @@ section .contenedor-titulo .subtitulo {
 }
 
 .juego.intro {
-  background-image: url('../images/mancha-de-tinta.png');
+  background-image: url('../images/fondos/mancha-de-tinta.png');
   background-color: #2c213c;
   background-size: cover;
   background-repeat: no-repeat;
@@ -689,26 +680,6 @@ section .botonera .contenedor-boton .boton {
   padding-bottom: 100px;
 }
 
-
-
-/*.contenedor-titulo {
-  text-align: center;
-  max-width: 335px;
-  margin: auto;
-  padding: 145px 0px 53px;
-  background-image: url('../images/kendo-enso-positivo.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.contenedor-titulo .subtitulo{
-  position: absolute;
-  bottom: 0;
-
-}
-
-*/
-
 .boton {
   max-width: 300px;
   margin: auto;
@@ -723,7 +694,7 @@ section .botonera .contenedor-boton .boton {
   width: 100%;
   position: absolute;
   height: 100%;
-  background-image: url('../images/fondo-botones.png');
+  background-image: url('../images/fondos/fondo-botones.png');
   background-size: 100%;
   background-position: center;
   top: 0;
@@ -742,13 +713,18 @@ section .botonera .contenedor-boton .boton {
   opacity: 0.5;
 }
 
+.mapa.intro .contenedor-titulo .subtitulo {
+    font-size: 35px;
+  }
 
-.caja-mapa{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+
+.caja-mapa {
+  overflow: hidden;
+  padding-bottom: 44.25%;
+  position: relative;
+  height: 0;
 }
+
 .caja-mapa iframe{
     left:0;
     top:0;
@@ -777,7 +753,7 @@ section .botonera .contenedor-boton .boton {
 
 
 .formulario {
-  background-image: url('../images/mancha-de-tinta-2.png');
+  background-image: url('../images/fondos/mancha-de-tinta-2.png');
   background-color: #2c213c;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -826,7 +802,7 @@ section .botonera .contenedor-boton .boton {
   width: 100%;
   border: 2px solid black;
   border-radius: 3px;
-  background-image: url('../images/fondo-botones.png');
+  background-image: url('../images/fondos/fondo-botones.png');
   background-size: 100%;
   padding: 15px 0 15px 40px;
   font-size: 1.5em;
@@ -867,7 +843,7 @@ section .botonera .contenedor-boton .boton {
   margin: auto;
   border: 2px solid black;
   border-radius: 3px;
-  background-image: url('../images/fondo-botones.png');
+  background-image: url('../images/fondos/fondo-botones.png');
   padding: 15px 0;
   position: relative;
   font-size: 1.5em;
@@ -891,13 +867,16 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-image: url('../images/footer-fondo.png');
+  background-image: url('../images/fondos/footer-fondo.png');
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: 50% bottom;
+  visibility: hidden;
 }
 
-
+.visible {
+  visibility: hidden;
+}
 
 footer .logo-footer {
   max-width: 140px;
@@ -951,6 +930,7 @@ footer .copyright p {
 .oculto {
   display: none;
 }
+
 
 
 
@@ -1093,6 +1073,9 @@ section .botonera .contenedor-boton .boton {
 
 @media all and (max-width: 767px) {
 
+.kendo.video .row {
+  top: 40%;
+}
 
 
   .desktop {
@@ -1122,6 +1105,10 @@ section .botonera .contenedor-boton .boton {
   .desktop.menu.sticky {
     display: none !important;
   }
+
+  .caja-video {
+  padding-bottom: 100.25%;
+}
 
   .kendo.saber-mas .contenedor-texto {
     text-align: center;

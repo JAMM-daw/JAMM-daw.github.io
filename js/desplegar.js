@@ -3,6 +3,14 @@ jQuery(document).ready(function() {
 	//Scroll a las diferentes secciones la web
 	//las restas en píxeles son un pequeño ajuste para que el sticky header no tape parte de la sección
 
+	$(".contenedor-principal").fadeIn(1000);
+
+	ocultaFooter();
+
+	function ocultaFooter() {
+  		setTimeout(function(){ $("footer").addClass("visible"); }, 3000);
+	}
+
 
 	$("#lanza-menu").click(function() {
 
