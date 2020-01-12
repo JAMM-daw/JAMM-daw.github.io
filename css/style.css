@@ -570,6 +570,9 @@ section .contenedor-titulo .subtitulo {
   padding-top: 45px;
 }
 
+.iaido.video .caja-video {
+  padding-bottom: 46.25%;
+}
 
 .iaido.saber-mas {
   padding-top: 75px;
@@ -1411,7 +1414,6 @@ section .contenido-demo .col-12{
 .caja-mapa {
   padding-bottom: 100.25%;
 }
-
 }
 
 
@@ -1470,6 +1472,7 @@ section .contenedor-titulo .subtitulo {
 .mapa.intro .contenedor-titulo .subtitulo {
   font-size: 25px;
 }
+
 
 
 footer .copyright p {
