@@ -157,8 +157,20 @@ jQuery(document).ready(function() {
 
   	$( function() {
 		$( "#tabs" ).tabs({
-			collapsible: true
+
 		});
+	});
+
+
+	$(".suscribir").click(function() {
+
+		var href = "#contacto";
+
+		var posicion = $(href).offset().top;
+
+		$("html, body").animate({
+    				scrollTop: posicion
+				}, 1000);
 	});
 
 

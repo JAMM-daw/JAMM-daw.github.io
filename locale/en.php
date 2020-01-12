@@ -78,7 +78,7 @@ $errorCheckbox ="You must agree to terms and conditions";
 
 $errorGeneral ="Required fields are missing";
 
-$checkbox1 ="Please check this box to accept the <a href='privacidad.html' target='_blank'> conditions of our privacy policy </a>. This web page is protected with reCAPTCHA. You can check the <a href='https://policies.google.com/privacy?hl=en'> Google privacy policy </a> for more information.";
+$checkbox1 ="Please check this box to accept the <a href='privacidad.html' target='_blank'> conditions of our privacy policy </a>.";
 $checkbox2 ="Please, check this box if you want to receive the newsletter";
                         
 

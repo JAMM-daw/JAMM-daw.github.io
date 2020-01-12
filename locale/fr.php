@@ -78,7 +78,7 @@ $errorCheckbox ="Vous devez accepter les termes et conditions";
 
 $errorGeneral ="Les champs obligatoires sont manquants";
 
-$checkbox1 ="Veuillez cocher cette case pour accepter les <a href='privacidad.html' target='_blank'> conditions de notre politique de confidentialité </a>. Cette page Web est protégée par reCAPTCHA. Vous pouvez consulter la <a href='https://policies.google.com/privacy?hl=en'> Politique de confidentialité de Google </a> pour plus d'informations.";
+$checkbox1 ="Veuillez cocher cette case pour accepter les <a href='privacidad.html' target='_blank'> conditions de notre politique de confidentialité </a>.";
 $checkbox2 ="Please, check this box if you want to receive the newsletter";
                         
 

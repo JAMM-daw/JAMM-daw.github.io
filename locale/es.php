@@ -78,7 +78,7 @@ $errorCheckbox ="Debes aceptar los términos y condiciones";
 
 $errorGeneral ="Faltan campos obligatorios(*) por rellenar";
 
-$checkbox1 ="Por favor, marca esta casilla para aceptar las <a href='privacidad.html' target='_blank'>condiciones de nuestra política de privacidad</a>. Esta página web está protegida con reCAPTCHA. Puedes revisar la <a href='https://policies.google.com/privacy?hl=es'>política de privacidad de Google</a> para más información.";
+$checkbox1 ="Por favor, marca esta casilla para aceptar las <a href='privacidad.html' target='_blank'>condiciones de nuestra política de privacidad</a>.";
 $checkbox2 ="Por favor, marca esta casilla si quieres recibir nuestra newsletter.";
                         
 

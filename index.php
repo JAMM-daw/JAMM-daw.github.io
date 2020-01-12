@@ -1,20 +1,16 @@
 <?php 
+
 session_start();
 
 if ( ($_GET['lang']) ){
 
     $lang = $_GET['lang'];
-    //header('Location:'.$_SERVER['PHP_SELF']);
     header('Location: /kikentai/'.$lang."/");
     exit();
 }
 
 else {
 
-// echo ($lang);
-// echo ("<br>");
-// echo ($_SERVER['PHP_SELF']);
- 
 }
 
 switch($lang){
@@ -46,24 +42,78 @@ switch($lang){
     <meta name="author" content="José Ángel Maestre, Circle Of Creators">
 
     <!--SEO TAGS-->
-    <title> <?php echo $title ?> </title>
-    <meta name="keywords" content="<?php echo $keywords ?>">
-
-    <meta name="description" content="<?php echo $description ?>">
-
     <!-- MODO DESARROLLO - SITIO INVISIBLE PARA ROBOTS HASTA COMIENZO DE CAMPAÑA -->
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- Etiqueta canonical, indica que es el contenido original y las otras páginas son duplicados/traducciones -->
 
-    <!-- FRAMEWORKS DE JAVASCRIPT -->
-    <!-- jQuery-->
-    <script src="../js/frameworks/jquery-3.4.1.min.js"></script>
-    <!--jQuery UI-->
-    <script src="../js/frameworks/jquery-ui.min.js"></script>
-	<!--ResponsiveSlides-->
-    <script src="../js/frameworks/responsiveslides.min.js"></script>
+    <!--El título lleva las palabras clave-->
+    <title> <?php echo $title ?> </title>
 
+    <!--Palabras clave que queremos indicar a Google-->
+
+    <meta name="keywords" content="<?php echo $keywords ?>">
+
+    <!--La descripción lleva las palabras clave-->
+
+    <meta name="description" content="<?php echo $description ?>">
+
+     <!-- Etiqueta canonical, indica que es el contenido original y las otras páginas son duplicados/traducciones -->
+    <?php 
+
+
+        if ($lang == "es") {
+            echo     "<link rel='canonical' href='https:/esedigital.ovh/kikentai/es/'/> " ;
+            echo     "<link rel='home' href='https:/esedigital.ovh/kikentai/es/' />" ;
+        }
+     
+    ?>
+
+
+
+<!--
+    <script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://pedropena.com/#organization","url":"https://pedropena.com/","name":"Pedro Pe\u00f1a","sameAs":["https://www.facebook.com/decoracionpedropena/","https://www.instagram.com/pedropenainteriordesign/"]},{"@type":"WebSite","@id":"https://pedropena.com/#website","url":"https://pedropena.com/","name":"Pedro pe\u00f1a","publisher":{"@id":"https://pedropena.com/#organization"}},{"@type":"WebPage","@id":"https://pedropena.com/#webpage","url":"https://pedropena.com/","inLanguage":"es","name":"INICIO","isPartOf":{"@id":"https://pedropena.com/#website"},"datePublished":"2018-07-05T09:24:29+00:00","dateModified":"2018-10-12T11:14:42+00:00","about":{"@id":"https://pedropena.com/#organization"},"description":"Pedro Pe\u00f1a es l\u00edder en dise\u00f1o de interiores exclusivo en Marbella. Proyectos de decoraci\u00f3n de interiores en Madrid, Nueva York, Londres y Par\u00eds entre otras."}]}</script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?php // echo $title ?>" />
+    <meta property="og:description" content="<?php //echo $description ?>" />
+    <meta property="og:url" content="https://esedigital.ovh/kikentai/" />
+    <meta property="og:site_name" content="Ki Ken Tai" />
+    <meta property="og:image" content="https://pedropena.com/wp-content/uploads/2018/10/pedro-pena-bueno.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="fb:admins" content="269827816375908" />
+    <meta property="og:image:secure_url" content="https://pedropena.com/wp-content/uploads/2018/10/pedro-pena-bueno.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="<?php // echo $title ?>" />
+    <meta name="twitter:description" content="<?php //echo $description ?>" />
+    <meta name="twitter:image" content="https://pedropena.com/wp-content/uploads/2018/10/pedro-pena-bueno.png" />
+            <script type="text/javascript" >
+                window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+                ga('create', 'UA-8693451-1', 'auto');
+                // Plugins
+                
+                ga('send', 'pageview');
+            </script>
+            <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+  --> 
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
 
         <!-- CSS & Responsive-->
     <link rel="stylesheet" href="../fonts/fonts.css" type="text/css">
@@ -72,13 +122,7 @@ switch($lang){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-    <?php 
 
-    if ($_SESSION['lang'] == "es") {
-        echo $canonical;
-    }
-     
-    ?>
 
     <meta name="viewport" content="width=device-width">
 
@@ -466,54 +510,475 @@ switch($lang){
 
                 <div id ="la-demo" class="row botonera">
                     <ul class="contenedor-boton centro">
-                        <li class="boton"><a href="#tabs-1"><?php echo $juegoMasInfoBoton ?></a><div class="fondo-boton"></div></li>
-                        <li class="boton"><a href="#tabs-2"><?php echo $descargaBoton ?></a><div class="fondo-boton"></div></li>
-                        <li class="boton"><a href="#tabs-3"><?php echo $demoBoton ?></a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-1"><?php echo $demoBoton ?></a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-2"><?php echo $juegoMasInfoBoton ?></a><div class="fondo-boton"></div></li>
+                        <li class="boton"><a href="#tabs-3"><?php echo $descargaBoton ?></a><div class="fondo-boton"></div></li>
+                        
                     </ul>
                 </div>
 
                 <div id="tabs-1" class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="contenedor-texto">
-                            <p>
-                                Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="contenedor-imagen">
-                            <img src="../images/kendo-generica.jpg">
-                        </div>
+                    <div class="col-12">
+                        <ul class="demo-kikentai desktop">
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>¿Cómo se juega a Ki Ken Tai?</h5>
+                                        <p>Ki Ken Tai es una fiel representación de un combate de Kendo (shiai)</p>
+                                        <p>Saluda a tu rival, ponte en guardia y...</p>
+                                        <p>¡Hajime!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/como-se-juega-kikentai.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>El objetivo del juego</h5>
+                                        <p>Un combate de kikentai representa un combate a SAN BON SHOBU de Kendo (al mejor de tres puntos) por lo que dura hasta que un kendoka marca 2 IPPON (puntos) o hasta que cualquier jugador roba su última carta del mazo, indicando con ello que el tiempo del combate se acabó.
+                                        </p>
+                                       <ul>
+                                            <li>Si un kendoka consigue dos ippones, gana el combate.</li>
+                                            <li>Si cuando se acaba el tiempo sólo un kendoka tiene un ippon, gana el combate.</li>
+                                            <li>En cualquier otro caso, se produce un Hikiwake (empate).</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/los-objetivos-de-kikentai.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>¿Cómo se marca un ippon?</h5>
+                                        <p>Nuestros amigos de Zanshin Madrid te lo explican en este vídeo:</p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TrXVyiznhes?start=47" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/que-es-un-ippon-kendo.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el men</h5>
+                                        <p>Es un corte en la zona superior de la cabeza del adversario</p>
+                                        <p>¡MEN ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/kendo-men-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el kote</h5>
+                                        <p>Es un corte en la zona de las muñecas donde protegen los guantes</p>
+                                        <p>¡KOTE ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/kendo-kote-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el do</h5>
+                                        <p>Es un corte en el zona del costado (izquierdo o derecho) donde nos protege la armadura</p>
+                                        <p>¡DO ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/kendo-do-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el tsuki</h5>
+                                        <p>Es una estocada en una lengüeta que nos protege la garganta. Es un ataque muy arriesgado y sólo los kendokas más experimentados</p>
+                                        <p>¡TSUKI ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/kendo-tsuki-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>La zona de juego</h5>
+                                        <p>El Shiajo o terreno de batalla está dividido en dos mitades, una para cada jugador. Cada mitad tiene a su vez tres áreas o Zonas: la zona de Combate, el área técnica y la zona de Focus.</p>
+                                        <p>Se barajean y dividen las cartas de árbitro  en 3 montones de 5. Se coloca un montón en medio del área de combate, a la derecha del jugador rojo y los otros dos a la izquierda de las áreas técnica de cada jugador. </p> 
+                                        <p>Los jugadores también barajean sus mazos de combate  y los colocan a su derecha. Enfrente de su mazo, pondrán su carta de personaje. Las cartas que jueguen como FOCUS durante la partida se colocarán en su zona de focus boca abajo, las tácticas y técnicas en el área técnica y las guardias  y ataques en la zona de combate.</p>
+                                        <p>Las cartas eliminadas del juego irán a la pila de descartes , a la izquierda del jugador. A su derecha colocaremos los marcadores de Hansoku , si es que tenemos alguno.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/el-shiaijo-kendo.jpg">
+                            </li>
+                            <li>
+                                <img src="../images/demo-kikentai/zona-de-juego.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <p>Cada combate se divide en RONDAS. Una ronda se acaba cuando:</p>
+                                        <ul>
+                                            <li>Se consigue un punto.</li>
+                                            <li>Se sufre un Hansoku (amonestación).</li>
+                                            <li>Un jugador roba su última carta. Final del combate por tiempo.</li>
+                                       </ul>
+                                        <h5>Cada ronda se divide en 4 fases:</h5>
+                                        <ul>
+                                            <li>1.  Fase de Kamae (guardia): Cada jugador roba hasta tener 7 cartas y elige una guardia inicial.</li>
+                                            <li>2.  Fase de Kiai (preparación): Donde se decide quien tendrá el primer turno.</li>
+                                            <li>3.  Fase de negociación: Los jugadores juegan turnos alternos aplicando técnicas y ataques.</li>
+                                            <li>4.  Fase de resolución: Se descubren las cartas de árbitro y se decide si hay ippon.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/el-shiaijo-kendo.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <ul>
+                                            <li>1.  Fase de Kamae (guardia): Cada jugador roba hasta tener 7 cartas y elige una guardia inicial.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/cartas-de-guardia.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <ul>
+                                            <li>2.  Fase de Kiai (preparación): Donde se decide quien tendrá el primer turno.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/kendo-jodan-kamae.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <ul>
+                                            <li>3.  Fase de negociación: Los jugadores juegan turnos alternos aplicando técnicas y ataques.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/cartas-de-ataque.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <ul>
+                                            <li>3.  Fase de negociación: Los jugadores juegan turnos alternos aplicando técnicas y ataques.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/cartas-de-tecnica.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <ul>
+                                            <li>3.  Fase de negociación: Los jugadores juegan turnos alternos aplicando técnicas y ataques.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/cartas-de-tactica.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Rondas de combate</h5>
+                                        <ul>
+                                            <li>4.  Fase de resolución: Se descubren las cartas de árbitro y se decide si hay ippon.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/cartas-de-arbitro.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>¡...y eso es todo!</h5>
+                                        <p>Estamos preparando muchas cosas que iremos publicando próximamente. Si quieres estar al tanto de todas las noticias de Ki Ken Tai puedes suscribirte a nuestra newsletter para enterarte de todo antes que nadie.</p>
+                                        <div class="contenedor-boton centro">
+                                            <div class="boton suscribir">
+                                                <a>Quiero suscribirme<?php// echo $queEsIaido ?></a>
+                                                <div class="fondo-boton"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-kikentai/el-shiaijo-kendo.jpg">
+                            </li>                              
+                        </ul>
+                        <ul class="demo-kikentai mobile">
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>¿Cómo se juega a Ki Ken Tai?</h5>
+                                        <p>Ki Ken Tai es una fiel representación de un combate de Kendo (shiai)</p>
+                                        <p>Saluda a tu rival, ponte en guardia y...</p>
+                                        <p>¡Hajime!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/como-se-juega.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>El objetivo del juego</h5>
+                                        <p>Un combate de kikentai representa un combate a SAN BON SHOBU de Kendo (al mejor de tres puntos) por lo que dura hasta que un kendoka marca 2 IPPON (puntos) o hasta que cualquier jugador roba su última carta del mazo, indicando con ello que el tiempo del combate se acabó.
+                                        </p>
+                                       <ul>
+                                            <li>Si un kendoka consigue dos ippones, gana el combate.</li>
+                                            <li>Si cuando se acaba el tiempo sólo un kendoka tiene un ippon, gana el combate.</li>
+                                            <li>En cualquier otro caso, se produce un Hikiwake (empate).</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/los-objetivos-kikentai.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>¿Cómo se marca un ippon?</h5>
+                                        <p>Nuestros amigos de Zanshin Madrid te lo explican en este vídeo:</p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TrXVyiznhes?start=47" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/que-es-un-ippon-kendo.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el men</h5>
+                                        <p>Es un corte en la zona superior de la cabeza del adversario</p>
+                                        <p>¡MEN ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/kendo-men-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el kote</h5>
+                                        <p>Es un corte en la zona de las muñecas donde protegen los guantes</p>
+                                        <p>¡KOTE ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/kendo-kote-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el do</h5>
+                                        <p>Es un corte en el zona del costado (izquierdo o derecho) donde nos protege la armadura</p>
+                                        <p>¡DO ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/kendo-do-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Tipos de ippon: el tsuki</h5>
+                                        <p>Es una estocada en una lengüeta que nos protege la garganta. Es un ataque muy arriesgado y sólo los kendokas más experimentados</p>
+                                        <p>¡TSUKI ARI!</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/kendo-tsuki-ippon.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>La zona de juego</h5>
+                                        <p>El Shiajo o terreno de batalla está dividido en dos mitades, una para cada jugador. Cada mitad tiene a su vez tres áreas o Zonas: la zona de Combate, el área técnica y la zona de Focus.</p>
+                                        <p>Se barajean y dividen las cartas de árbitro  en 3 montones de 5. Se coloca un montón en medio del área de combate, a la derecha del jugador rojo y los otros dos a la izquierda de las áreas técnica de cada jugador. </p> 
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/el-shiaijo.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Las rondas de juego</h5>
+                                        <p>1. Fase de Kamae: Cada jugador roba hasta tener 7 cartas y elige una guardia inicial.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/kendo-jodan-kamae.jpg">
+                            </li>
+                            <li>
+                                <img src="../images/demo-mobile/cartas-de-guardia.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Las rondas de juego</h5>
+                                        <p>2.   Fase de Kiai : Donde se decide quien tendrá el primer turno.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/el-shiaijo.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Las rondas de juego</h5>
+                                        <p>3.   Fase de negociación: Los jugadores juegan turnos alternos hasta que hay IPPON o uno recibe un Hansoku.</p>
+                                        <p>En esta fase se juegan las cartas de ataque, técnica y táctica.</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/el-shiaijo.jpg">
+                            </li>
+                            <li>
+                                <img src="../images/demo-mobile/cartas-de-ataque.jpg">
+                            </li>
+                            <li>
+                                <img src="../images/demo-mobile/cartas-de-tecnica.jpg">
+                            </li>
+                            <li>
+                                <img src="../images/demo-mobile/cartas-de-tacticas.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>Las rondas de juego</h5>
+                                        <p>4. Fase de resolución: donde se decide si hay punto o no.</p>
+                                        <p>En esta fase se revela la decisión de cada árbitro</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/el-shiaijo.jpg">
+                            </li>
+                            <li>
+                                <img src="../images/demo-mobile/cartas-de-arbitro.jpg">
+                            </li>
+                            <li>
+                                <div class="row contenido-demo">
+                                    <div class="col-12">
+                                        <div class="caja-texto">
+                                        <h5>¡...y eso es todo!</h5>
+                                        <p>Estamos preparando muchas cosas que iremos publicando próximamente. Si quieres estar al tanto de todas las noticias de Ki Ken Tai puedes suscribirte a nuestra newsletter para enterarte de todo antes que nadie.</p>
+                                        <div class="contenedor-boton centro">
+                                            <div class="boton suscribir">
+                                                <a>Quiero suscribirme<?php// echo $queEsIaido ?></a>
+                                                <div class="fondo-boton"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <img src="../images/demo-mobile/el-shiaijo.jpg">
+                            </li> 
+                        </ul>
                     </div>
 
                 </div>
+
                 <div id="tabs-2" class="row">
-                 	<div class="col-lg-6 col-12">
-                        <div class="contenedor-imagen">
-                            <img src="../images/kendo-generica.jpg">
+                    <div class="col-12">
+                        <div class="contenedor-texto">
+                            <h4>Contenido de la caja (100 cartas):</h4>
+                            <ul>
+                                <li>15 Cartas de árbitro</li>
+                                <li>10 Cartas de Personaje</li>
+                                <li>2 Cartas de Hansoku</li>
+                                <li>2 Cartas de Guardias (dos caras)</li>
+                                <li>15 Cartas de Ataques</li>
+                                <li>36 Cartas Técnicas</li>
+                                <li>20 Cartas de Tácticas</li>
+                            </ul>
+                            <h4>Formación del mazo:</h4>
+                            <p>Para jugar una partida de KiKenTai, los jugadores necesitan tener un juego de cartas arbitrales. Además, cada jugador debe prepararse un mazo  de cartas que contenga las siguientes cartas y en las siguientes proporciones:</p>
+                            <ul>
+                                <li>1 Personaje</li>
+                                <li>1 copia de cada carta de GUARDIA (Chudan, Jodan, Gedan, TsubaZeriAi)</li>
+                                <li>50 Cartas de combate:</li>
+                                <li>
+                                    <ul>
+                                        <li>Mínimo 15 cartas de ATAQUE, pudiendo tenerlas en cualquier proporción.</li>
+                                        <li>4 copias máximo del resto de cartas.</li>
+                                    </ul>
+                                </li>
+                            </ul>  
+
                         </div>
                     </div>
-                    <div class="col-lg-6 col-12">
+                </div>
+                <div id="tabs-3" class="row">
+                    <div class="col-12">
                         <div class="contenedor-texto">
-                            <p>
-                                Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus.
-                            </p>
+                            <h4>Aún no tenemos material de descarga, pero...</h4>
+                            <p>Estamos preparando muchas cosas que iremos publicando próximamente. Si quieres estar al tanto de todas las noticias de Ki Ken Tai puedes suscribirte a nuestra newsletter para enterarte de todo antes que nadie.</p>
+                            <div class="contenedor-boton centro">
+                                <div class="boton suscribir">
+                                    <a>Quiero suscribirme<?php// echo $queEsIaido ?></a>
+                                    <div class="fondo-boton"></div>
+                                </div>
                         </div>
                  	</div>
             	</div>
-            	<div id="tabs-3" class="row">
-                 	<div class="col-12">
-                 		<ul class="rslides">
-                            <li><img src="../images/slides/imagen-0.jpg"></li>
-                            <li><img src="../images/slides/imagen-1.jpg"></li>
-                            <li><img src="../images/slides/imagen-2.jpg"></li>
-                            <li><img src="../images/slides/imagen-3.jpg"></li>
-                		</ul>
-                    </div>
 
-                </div>
 
-            <div class="solapa inferior azul"></div>
+            
             
         </section>
 
@@ -570,7 +1035,7 @@ switch($lang){
 
         <!-- Listado de dojos en España desplegable -->
 
-        <section class="listado-de-dojos">
+        <section class="listado-de-dojos oculto">
             <div class="row">
                 <div class="col-sm-6 col-12">
                     <ul class="listado-dojos">
@@ -638,8 +1103,8 @@ switch($lang){
                             <ul class="mur comunidad-desplegable">
                                 <li><a href="">Kishinkai Dojo</a></li>
                             </ul>
-                        <li id="nav" class="comunidad">Comunidad Foral de Navarra</li>
-                            <ul class="nav comunidad-desplegable">
+                        <li id="nava" class="comunidad">Comunidad Foral de Navarra</li>
+                            <ul class="nava comunidad-desplegable">
                                 <li><a href="">Kishinkai Dojo</a></li>
                             </ul>
                         <li id="vas" class="comunidad">País Vasco</li>
@@ -757,16 +1222,32 @@ switch($lang){
             </div>
         </div>
     </footer>
+
+        <!-- FRAMEWORKS DE JAVASCRIPT -->
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"
+            async >
+    </script>
+    <!--ResponsiveSlides-->
+    <script src="../js/frameworks/responsiveslides.min.js"></script>
        
         <!--CARGA DE SCRIPTS JS-->
     <!--Script de slider-->
-    <script src="../js/slider.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
     <!-- Scripts de navegación-->
-    <script src="../js/desplegar.js"></script>
+    <script type="text/javascript" src="../js/desplegar.js"></script>
     <!-- Script de sticky header-->
-    <script src="../js/sticky-header.js"></script>   
+    <script type="text/javascript" src="../js/sticky-header.js"></script>   
     <!-- AJAX del formulario --> 
     <script type="text/javascript" src="../js/form.js"> </script>
+
 
 
 

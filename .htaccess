@@ -1,6 +1,6 @@
 RewriteEngine On
 
-#Fuerza a usar el protocolo seguro HTTPS (403)
+#Redirige el indice de la web al puerto seguro HTTPS
 RewriteCond %{SERVER_PORT} 80 
 RewriteCond %{REQUEST_URI} kikentai 
 RewriteRule ^(.*)$ https://esedigital.ovh/kikentai/$1 [R,L]
