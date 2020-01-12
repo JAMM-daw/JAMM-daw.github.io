@@ -1,5 +1,0 @@
-RewriteEngine On
-
-#Fuerza a entrar en HTTPS
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://esedigital.ovh/$1 [R,L]
