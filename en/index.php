@@ -2,6 +2,6 @@
 
 $lang = "en";
 
-require('../index.php');
+include('../index.php');
 
 ?>

@@ -19,16 +19,16 @@ else {
 
 switch($lang){
     case "es":
-        require('locale/es.php');        
+        include('locale/es.php');        
     break;
     case "en":
-        require('locale/en.php');        
+        include('locale/en.php');        
     break;
     case "fr":
-        require('locale/fr.php');        
+        include('locale/fr.php');        
     break;
     default: 
-        require('locale/es.php');
+        include('locale/es.php');
 
     }
 
@@ -546,7 +546,7 @@ switch($lang){
 
 
                         <div class="caja-mapa">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=1y1FBLnJkUs7TAMh6CSfgZu3vM-HhPW6w&ll=40.47047006933437, -3.6927482602304735" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1y1FBLnJkUs7TAMh6CSfgZu3vM-HhPW6w&ll=40.11139452423873%2C-3.082549678169471&z=6&ll=40.11139452423873%2C-3.082549678169471&z=6" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
 
 
@@ -570,32 +570,86 @@ switch($lang){
 
         <!-- Listado de dojos en España desplegable -->
 
-        <section class="listado-de-dojos oculto">
+        <section class="listado-de-dojos">
             <div class="row">
                 <div class="col-sm-6 col-12">
                     <ul class="listado-dojos">
-                        <li>Andalucía</li>
-                        <li>Aragón</li>
-                        <li>Principado de Asturias</li>
-                        <li>Baleares</li>
-                        <li>Canarias</li>
-                        <li>Cantabria</li>
-                        <li>Castilla-La Mancha</li>
-                        <li>Castilla y León</li>
-                        <li>Ceuta y Melilla</li>
+                        <li id="and" class="comunidad">Andalucía</li>
+                            <ul class="and comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="ara" class="comunidad">Aragón</li>
+                            <ul class="ara comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="ast"class="comunidad">Principado de Asturias</li>
+                            <ul class="ast comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="bal" class="comunidad">Baleares</li>
+                            <ul class="bal comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="can" class="comunidad">Canarias</li>
+                            <ul class="can comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="cant" class="comunidad">Cantabria</li>
+                            <ul class="cant comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="cast" class="comunidad">Castilla-La Mancha</li>
+                            <ul class="cast comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="leo"class="comunidad">Castilla y León</li>
+                            <ul class="leo comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="ceu" class="comunidad">Ceuta y Melilla</li>
+                            <ul class="ceu comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-12">
                     <ul class="listado-dojos">
-                        <li>Cataluña</li>
-                        <li>Extremadura</li>
-                        <li>Galicia</li>
-                        <li>La Rioja</li>
-                        <li>Comunidad de Madrid</li>
-                        <li>Región de Murcia</li>
-                        <li>Comunidad Foral de Navarra</li>
-                        <li>País Vasco</li>
-                        <li>Comunidad Valenciana</li>
+                        <li id="cat" class="comunidad">Cataluña</li>
+                            <ul class="cat comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="ext" class="comunidad">Extremadura</li>
+                            <ul class="ext comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="gal" class="comunidad">Galicia</li>
+                            <ul class="gal comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="rio" class="comunidad">La Rioja</li>
+                            <ul class="rio comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="mad" class="comunidad">Comunidad de Madrid</li>
+                            <ul class="mad comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="mur" class="comunidad">Región de Murcia</li>
+                            <ul class="mur comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="nav" class="comunidad">Comunidad Foral de Navarra</li>
+                            <ul class="nav comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="vas" class="comunidad">País Vasco</li>
+                            <ul class="vas comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
+                        <li id="val" class="comunidad">Comunidad Valenciana</li>
+                            <ul class="val comunidad-desplegable">
+                                <li><a href="">Kishinkai Dojo</a></li>
+                            </ul>
                     </ul>
                 </div>
             </div>

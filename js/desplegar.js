@@ -160,6 +160,15 @@ jQuery(document).ready(function() {
 			collapsible: true
 		});
 	});
+
+
+	$(".comunidad").click(function () {
+
+		var id = $(this).attr('id');
+
+		$( "."+id+".comunidad-desplegable" ).slideToggle();
+
+	});
 	
 
 });

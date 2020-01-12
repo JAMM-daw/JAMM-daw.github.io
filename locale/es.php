@@ -5,7 +5,6 @@
 
 //HEAD
 
-$cambioDeRutas =".";
 
 $codigoIdioma ="es-ES";
 

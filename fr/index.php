@@ -2,7 +2,7 @@
 
 $lang = "fr";
 
-require('../index.php');
+include('../index.php');
 
 
 ?>

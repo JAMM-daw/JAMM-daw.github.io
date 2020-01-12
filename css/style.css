@@ -744,9 +744,32 @@ section .botonera .contenedor-boton .boton {
 }
 
 .listado-dojos {
-  list-style-image: url('../images/kendo-icon.png');
+  list-style-image: url('../images/elementos-decorativos/kendo-icon.png');
   font-size: 1.3em;
   padding-bottom: 50px;
+  font-family: 'Georgia';
+}
+
+.comunidad{
+  cursor: pointer;
+}
+
+.comunidad:hover a{
+  color: red;
+}
+
+.comunidad-desplegable {
+  display: none;
+  list-style-image: url('../images/elementos-decorativos/dojo.png');
+  font-size: 18px;
+}
+
+.comunidad-desplegable li {
+  margin: 5px 0;
+}
+
+.comunidad-desplegable li a{
+  color: black;
 }
 
 
