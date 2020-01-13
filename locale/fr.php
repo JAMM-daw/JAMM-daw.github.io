@@ -8,17 +8,17 @@
 
 $codigoIdioma ="fr-FR";
 
-$keywords = "ki ken tai, kendo, jeu de cartes";
+$keywords = "Kikentai, kendo, jeu de cartes";
 
-$title ="KI KEN TAI - Le premier jeu de cartes sur Kendo";
+$title ="Kikentai - Le premier jeu de cartes sur Kendo";
 
-$description ="KI KEN TAI est le premier jeu de cartes sur Kendo";
+$description ="Kikentai est le premier jeu de cartes sur Kendo";
 
 $canonical = "";
 
 //ALTS
 
-$altLogo ="ki ken tai logo";
+$altLogo ="Kikentai logo";
 
 
 
@@ -58,7 +58,7 @@ $botonSubmit ="Envoyer";
 
 $queEsKendo ="Qu'est-ce que l'Iaido?";
 $queEsIaido ="Qu'est-ce que l'Iaido?";
-$queEsKikentai ="Qu'est-ce que Ki Ken Tai?";
+$queEsKikentai ="Qu'est-ce que Kikentai?";
 $dondeEntreno ="Carte de Dojos";
 $queContacto ="Contact";
 
@@ -87,7 +87,7 @@ $checkbox2 ="Please, check this box if you want to receive the newsletter";
 
 //FOOTER
 
-$footer ="<p> Ki Ken Tai est une marque déposée de Circle of Creators - Copyright 2020</p>";
+$footer ="<p> Kikentai est une marque déposée de Circle of Creators - Copyright 2020</p>";
 
 
 //TEXTOS

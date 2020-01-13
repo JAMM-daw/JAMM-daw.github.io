@@ -224,7 +224,11 @@ a:hover {
 
 /* CONTENEDOR PRINCIPAL */
 
-
+section p {
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #a2a2a27a;
+}
 
 section .row {
     margin: 0;
@@ -474,7 +478,8 @@ height: 100%;
   background-repeat: no-repeat;
 }
 
-.juego.intro p {
+.juego.intro p,
+.juego.intro h4 {
   color: white;
 }
 
@@ -1155,6 +1160,15 @@ footer .copyright p {
 
 @media all and (max-width: 768px) {
 
+  .img-mobile {
+    display: block;
+  }
+
+  .col-img {
+    display: none;
+  }
+
+
   .desktop {
     display: block;
   }
@@ -1260,6 +1274,10 @@ section .botonera .contenedor-boton .boton {
   order: 0;
 }
 
+.caja-mapa {
+  padding-bottom: 80%;
+}
+
 }
 
 
@@ -1297,10 +1315,6 @@ section .botonera .contenedor-boton .boton {
   .desktop.menu.sticky {
     display: none !important;
   }
-
-  .caja-video {
-  padding-bottom: 100.25%;
-}
 
   .kendo.saber-mas .contenedor-texto {
     text-align: center;
@@ -1473,7 +1487,13 @@ section .contenedor-titulo .subtitulo {
   font-size: 25px;
 }
 
+.kendo.caja-video {
+  padding-bottom: 60.25%;
+}
 
+.iaido.caja-video {
+  padding-bottom: 60.25%;
+}
 
 footer .copyright p {
   padding: 0 30px;
@@ -1507,6 +1527,13 @@ footer .copyright p {
     display: none !important;
   }
 
+  .img-mobile {
+    display: none;
+  }
+
+  .col-img {
+    display: block;
+  }
 
 
 }

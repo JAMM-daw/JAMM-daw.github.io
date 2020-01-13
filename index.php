@@ -68,36 +68,6 @@ switch($lang){
      
     ?>
 
-
-
-<!--
-    <script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://pedropena.com/#organization","url":"https://pedropena.com/","name":"Pedro Pe\u00f1a","sameAs":["https://www.facebook.com/decoracionpedropena/","https://www.instagram.com/pedropenainteriordesign/"]},{"@type":"WebSite","@id":"https://pedropena.com/#website","url":"https://pedropena.com/","name":"Pedro pe\u00f1a","publisher":{"@id":"https://pedropena.com/#organization"}},{"@type":"WebPage","@id":"https://pedropena.com/#webpage","url":"https://pedropena.com/","inLanguage":"es","name":"INICIO","isPartOf":{"@id":"https://pedropena.com/#website"},"datePublished":"2018-07-05T09:24:29+00:00","dateModified":"2018-10-12T11:14:42+00:00","about":{"@id":"https://pedropena.com/#organization"},"description":"Pedro Pe\u00f1a es l\u00edder en dise\u00f1o de interiores exclusivo en Marbella. Proyectos de decoraci\u00f3n de interiores en Madrid, Nueva York, Londres y Par\u00eds entre otras."}]}</script>
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php // echo $title ?>" />
-    <meta property="og:description" content="<?php //echo $description ?>" />
-    <meta property="og:url" content="https://esedigital.ovh/kikentai/" />
-    <meta property="og:site_name" content="Ki Ken Tai" />
-    <meta property="og:image" content="https://pedropena.com/wp-content/uploads/2018/10/pedro-pena-bueno.png" />
-    <meta property="og:image:width" content="500" />
-    <meta property="fb:admins" content="269827816375908" />
-    <meta property="og:image:secure_url" content="https://pedropena.com/wp-content/uploads/2018/10/pedro-pena-bueno.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="<?php // echo $title ?>" />
-    <meta name="twitter:description" content="<?php //echo $description ?>" />
-    <meta name="twitter:image" content="https://pedropena.com/wp-content/uploads/2018/10/pedro-pena-bueno.png" />
-            <script type="text/javascript" >
-                window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-                ga('create', 'UA-8693451-1', 'auto');
-                // Plugins
-                
-                ga('send', 'pageview');
-            </script>
-            <script async src="https://www.google-analytics.com/analytics.js"></script>
-
-  --> 
-
-
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
@@ -159,7 +129,7 @@ switch($lang){
         <div class="row">
             <div class="col-2">
                 <div class="contenedor-logo">
-                    <a href="index.php?lang=<?php echo $lang ?>><img src="../images/logos/kikentai-logo.png" alt=" <?php echo $altLogo ?> " ></a>
+                    <a href="index.php?lang=<?php echo $lang ?>"><img src="../images/logos/kikentai-logo.png" alt=" <?php echo $altLogo ?> " ></a>
                 </div>
             </div>
             <div class="col-10">
@@ -226,7 +196,7 @@ switch($lang){
         <section class="slider">
             <div class="row">
                 <div class="col-12 col-lg-10">
-                    <h1>KI KEN TAI</h1>
+                    <h1>Kikentai</h1>
                     <h2> <?php echo $sliderTitulo ?> </h2>
                 </div>
                 <div class="col-12">
@@ -266,11 +236,8 @@ switch($lang){
                 </div>
                 <div class="col-12">
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <p><?php echo $kendoIntro ?></p>
+                        <p><?php echo $kendoIntro2 ?></p>
                     </div>
                 </div>
             </div>
@@ -312,39 +279,31 @@ switch($lang){
         <section id="kendo-saber-mas" class="kendo saber-mas oculto ">
 
             <div class="row">
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <h4><?php echo $kendoh4 ?></h4>
+                        <p><?php echo $kendoMas1 ?></p>
                     </div>
-                    <div class="contenedor-imagen mobile">
+                    <div class="contenedor-imagen img-mobile">
                         <img src="../images/kendo-sabermas/kendo-shinai.jpg">
                     </div>
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <h4><?php echo $kendoh41 ?></h4>
+                        <p><?php echo $kendoMas2 ?></p>
                     </div>
-                    <div class="contenedor-imagen mobile">
+                    <div class="contenedor-imagen img-mobile">
                         <img src="../images/kendo-sabermas/kendo-seiza.jpg">
                     </div>
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <h4><?php echo $kendoh42 ?></h4>
+                        <p><?php echo $kendoMas3 ?></p>
+                        <p><?php echo $kendoMas4 ?></p>
                     </div>
-                    <div class="contenedor-imagen mobile">
+                    <div class="contenedor-imagen img-mobile">
                         <img src="../images/kendo-sabermas/kendo-men.jpg">
                     </div>
                 </div>
-                <div class="col-sm-6 desktop">
+                <div class="col-lg-6 col-img">
                     <div class="contenedor-imagen">
                         <img src="../images/kendo-sabermas/kendo-shinai.jpg">
                     </div>
@@ -358,7 +317,7 @@ switch($lang){
                 <div class="col-12">
                     <div class="contenedor-boton centro">
                         <div id ="iaido-1" class="boton boton-desplegar">
-                            <a><?php echo $queEsIaido ?></a>
+                            <a><?php echo $iaidoBoton ?></a>
                             <div class="fondo-boton"></div>
                         </div>
                     </div>
@@ -381,11 +340,8 @@ switch($lang){
                 </div>
                 <div class="col-12">
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <p><?php echo $iaidoIntro ?> </p>
+                        <p><?php echo $iaidoIntro2 ?> </p>
                     </div>
                 </div>
             </div>
@@ -421,7 +377,7 @@ switch($lang){
         <section class="iaido iaido-2 saber-mas oculto">
 
             <div class="row">
-                <div class="col-sm-6 desktop">
+                <div class="col-lg-6 col-img">
                     <div class="contenedor-imagen">
                         <img src="../images/iaido-sabermas/iaido-chiburi.jpg">
                     </div>
@@ -432,35 +388,27 @@ switch($lang){
                         <img src="../images/iaido-sabermas/iaido-furikaburi.jpg">
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <h4><?php echo $iaidoh4 ?></h4>
+                        <p><?php echo $iaidoMas ?></p>
+                        
                     </div>
-                    <div class="contenedor-imagen mobile">
+                    <div class="contenedor-imagen img-mobile">
                         <img src="../images/iaido-sabermas/iaido-chiburi.jpg">
                     </div>
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <p><?php echo $iaidoMas1 ?></p>
                     </div>
-                    <div class="contenedor-imagen mobile">
+                    <div class="contenedor-imagen img-mobile">
                         <img src="../images/iaido-sabermas/iaido-iaito.jpg">
                     </div>
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <h4><?php echo $iaidoh41 ?></h4>
+                        <p><?php echo $iaidoMas2 ?></p>
+                        
                     </div>
-                    <div class="contenedor-imagen mobile">
+                    <div class="contenedor-imagen img-mobile">
                         <img src="../images/iaido-sabermas/iaido-furikaburi.jpg">
                     </div>
                 </div>                
@@ -497,11 +445,7 @@ switch($lang){
                         <h3 class="subtitulo"><?php echo $queEsKikentai ?></h3>
                     </div>
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <p><?php echo $juegoIntro  ?></p>
                     </div>
                 </div>
             </div>
@@ -995,11 +939,7 @@ switch($lang){
                 </div>
                 <div class="col-12">
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <p> <?php echo $mapaIntro ?> </p>
                     </div>
                 </div>
             </div>
@@ -1129,11 +1069,7 @@ switch($lang){
                         <h3 class="subtitulo"><?php echo $queContacto ?></h3>
                     </div>
                     <div class="contenedor-texto">
-                        <p>
-                            Nulla eget cursus ante. Praesent sit amet mauris eget justo vulputate pellentesque quis pretium purus. Pellentesque scelerisque dictum ex, vitae lobortis arcu dictum vel. Curabitur et urna condimentum, dapibus tellus sit amet, sagittis lectus. Suspendisse
-                            non nunc faucibus, elementum libero ut, pretium ex. Morbi vestibulum, sem quis luctus tristique, eros sem finibus massa, nec finibus metus arcu hendrerit arcu. Aenean at varius felis. Donec id quam quis massa cursus pretium
-                            eget id velit. Cras at ultrices sem. Quisque eu molestie nisl. Aenean auctor urna eget mi ultricies, at sollicitudin turpis interdum. Aenean viverra ac nulla sed porttitor.
-                        </p>
+                        <p> <?php echo $contactoIntro ?> </p>
                     </div>
                 </div>
 
